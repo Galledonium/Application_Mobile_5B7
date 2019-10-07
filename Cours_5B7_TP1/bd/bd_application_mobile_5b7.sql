@@ -191,6 +191,8 @@ ALTER TABLE `types_paiements`
 ALTER TABLE `users`
   ADD PRIMARY KEY (`id`);
 
+ALTER TABLE `users` ADD `permissions` TINYINT NOT NULL AFTER `id`;
+
 --
 -- AUTO_INCREMENT pour les tables exportées
 --
