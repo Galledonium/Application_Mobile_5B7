@@ -1,0 +1,394 @@
+2019-09-10 16:14:36 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2019-09-10 16:14:48 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2019-09-10 16:15:05 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2019-09-10 16:15:32 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2019-09-10 16:15:33 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2019-09-10 16:15:53 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2019-09-10 16:15:54 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2019-09-10 16:16:02 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2019-09-10 16:16:16 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2019-09-10 16:16:17 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2019-09-10 16:19:42 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2019-09-10 16:19:42 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Applications could not be found.
+Exception Attributes: array (
+  'class' => 'Applications',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+#0 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(39): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(91): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(123): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(168): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(96): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\webroot\index.php(40): Cake\Http\Server->run()
+#17 {main}
+Request URL: /applications
+Referer URL: http://localhost/Cours_5B7_TP/Cours_5B7_TP1/users
+
+
+2019-09-10 16:20:24 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2019-09-10 16:20:30 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2019-09-10 16:20:33 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2019-09-10 16:20:50 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2019-09-10 16:20:50 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2019-09-10 16:23:42 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2019-09-10 16:23:52 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2019-09-10 16:24:17 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2019-09-10 16:24:21 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2019-09-10 16:27:38 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2019-09-16 15:57:14 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2019-09-16 15:57:23 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2019-09-16 16:22:28 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2019-09-16 16:22:35 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2019-09-16 16:22:35 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2019-09-16 16:26:02 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2019-09-16 16:26:17 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2019-09-16 16:26:24 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2019-09-16 16:26:28 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2019-09-16 16:28:02 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2019-09-16 16:28:03 Error: [RuntimeException] Cannot insert row in "applications_users" table, it has no primary key.
+#0 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(2021): Cake\ORM\Table->_insert(Object(App\Model\Entity\ApplicationsUser), Array)
+#1 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(1934): Cake\ORM\Table->_processSave(Object(App\Model\Entity\ApplicationsUser), Object(ArrayObject))
+#2 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(1639): Cake\ORM\Table->Cake\ORM\{closure}()
+#3 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Connection.php(738): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#4 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(1640): Cake\Database\Connection->transactional(Object(Closure))
+#5 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(1935): Cake\ORM\Table->_executeTransaction(Object(Closure), true)
+#6 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Association\BelongsToMany.php(851): Cake\ORM\Table->save(Object(App\Model\Entity\ApplicationsUser), Object(ArrayObject))
+#7 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Association\BelongsToMany.php(795): Cake\ORM\Association\BelongsToMany->_saveLinks(Object(App\Model\Entity\Application), Array, Array)
+#8 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Association\BelongsToMany.php(1225): Cake\ORM\Association\BelongsToMany->_saveTarget(Object(App\Model\Entity\Application), Array, Array)
+#9 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Connection.php(738): Cake\ORM\Association\BelongsToMany->Cake\ORM\Association\{closure}(Object(Cake\Database\Connection))
+#10 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Association\BelongsToMany.php(1244): Cake\Database\Connection->transactional(Object(Closure))
+#11 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Association\BelongsToMany.php(729): Cake\ORM\Association\BelongsToMany->replaceLinks(Object(App\Model\Entity\Application), Array, Array)
+#12 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\AssociationCollection.php(321): Cake\ORM\Association\BelongsToMany->saveAssociated(Object(App\Model\Entity\Application), Array)
+#13 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\AssociationCollection.php(295): Cake\ORM\AssociationCollection->_save(Object(Cake\ORM\Association\BelongsToMany), Object(App\Model\Entity\Application), Array, Array)
+#14 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\AssociationCollection.php(260): Cake\ORM\AssociationCollection->_saveAssociations(Object(App\Model\Table\ApplicationsTable), Object(App\Model\Entity\Application), Array, Array, true)
+#15 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(2054): Cake\ORM\AssociationCollection->saveChildren(Object(App\Model\Table\ApplicationsTable), Object(App\Model\Entity\Application), Array, Array)
+#16 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(2027): Cake\ORM\Table->_onSaveSuccess(Object(App\Model\Entity\Application), Object(ArrayObject))
+#17 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(1934): Cake\ORM\Table->_processSave(Object(App\Model\Entity\Application), Object(ArrayObject))
+#18 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(1639): Cake\ORM\Table->Cake\ORM\{closure}()
+#19 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Connection.php(738): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#20 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(1640): Cake\Database\Connection->transactional(Object(Closure))
+#21 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(1935): Cake\ORM\Table->_executeTransaction(Object(Closure), true)
+#22 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\src\Controller\ApplicationsController.php(53): Cake\ORM\Table->save(Object(App\Model\Entity\Application))
+#23 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Controller\Controller.php(610): App\Controller\ApplicationsController->add()
+#24 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#25 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ApplicationsController))
+#26 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#27 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#28 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#29 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(123): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#30 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#31 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#32 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(168): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#33 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#34 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#35 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#36 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(96): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#37 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#38 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#39 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#40 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\webroot\index.php(40): Cake\Http\Server->run()
+#41 {main}
+Request URL: /applications/add
+Referer URL: http://localhost/Cours_5B7_TP/Cours_5B7_TP1/applications/add
+
+
+2019-09-16 16:28:11 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2019-09-16 16:28:17 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2019-09-16 16:28:18 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2019-09-16 16:28:27 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2019-09-16 16:28:53 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2019-09-16 16:28:54 Error: [RuntimeException] Cannot insert row in "applications_users" table, it has no primary key.
+#0 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(2021): Cake\ORM\Table->_insert(Object(App\Model\Entity\ApplicationsUser), Array)
+#1 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(1934): Cake\ORM\Table->_processSave(Object(App\Model\Entity\ApplicationsUser), Object(ArrayObject))
+#2 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(1639): Cake\ORM\Table->Cake\ORM\{closure}()
+#3 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Connection.php(738): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#4 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(1640): Cake\Database\Connection->transactional(Object(Closure))
+#5 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(1935): Cake\ORM\Table->_executeTransaction(Object(Closure), true)
+#6 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Association\BelongsToMany.php(851): Cake\ORM\Table->save(Object(App\Model\Entity\ApplicationsUser), Object(ArrayObject))
+#7 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Association\BelongsToMany.php(795): Cake\ORM\Association\BelongsToMany->_saveLinks(Object(App\Model\Entity\User), Array, Array)
+#8 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Association\BelongsToMany.php(1225): Cake\ORM\Association\BelongsToMany->_saveTarget(Object(App\Model\Entity\User), Array, Array)
+#9 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Connection.php(738): Cake\ORM\Association\BelongsToMany->Cake\ORM\Association\{closure}(Object(Cake\Database\Connection))
+#10 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Association\BelongsToMany.php(1244): Cake\Database\Connection->transactional(Object(Closure))
+#11 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Association\BelongsToMany.php(729): Cake\ORM\Association\BelongsToMany->replaceLinks(Object(App\Model\Entity\User), Array, Array)
+#12 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\AssociationCollection.php(321): Cake\ORM\Association\BelongsToMany->saveAssociated(Object(App\Model\Entity\User), Array)
+#13 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\AssociationCollection.php(295): Cake\ORM\AssociationCollection->_save(Object(Cake\ORM\Association\BelongsToMany), Object(App\Model\Entity\User), Array, Array)
+#14 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\AssociationCollection.php(260): Cake\ORM\AssociationCollection->_saveAssociations(Object(App\Model\Table\UsersTable), Object(App\Model\Entity\User), Array, Array, true)
+#15 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(2054): Cake\ORM\AssociationCollection->saveChildren(Object(App\Model\Table\UsersTable), Object(App\Model\Entity\User), Array, Array)
+#16 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(2027): Cake\ORM\Table->_onSaveSuccess(Object(App\Model\Entity\User), Object(ArrayObject))
+#17 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(1934): Cake\ORM\Table->_processSave(Object(App\Model\Entity\User), Object(ArrayObject))
+#18 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(1639): Cake\ORM\Table->Cake\ORM\{closure}()
+#19 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Connection.php(738): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#20 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(1640): Cake\Database\Connection->transactional(Object(Closure))
+#21 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(1935): Cake\ORM\Table->_executeTransaction(Object(Closure), true)
+#22 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\src\Controller\UsersController.php(53): Cake\ORM\Table->save(Object(App\Model\Entity\User))
+#23 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Controller\Controller.php(610): App\Controller\UsersController->add()
+#24 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#25 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#26 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#27 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#28 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#29 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(123): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#30 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#31 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#32 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(168): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#33 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#34 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#35 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#36 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(96): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#37 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#38 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#39 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#40 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\webroot\index.php(40): Cake\Http\Server->run()
+#41 {main}
+Request URL: /users/add
+Referer URL: http://localhost/Cours_5B7_TP/Cours_5B7_TP1/users/add
+
+
+2019-09-16 16:28:56 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2019-09-16 16:29:05 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2019-09-16 16:29:07 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2019-09-16 16:29:31 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2019-09-16 16:29:36 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2019-09-16 16:29:47 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2019-09-16 16:29:52 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2019-09-16 16:29:54 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2019-09-16 16:29:56 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2019-09-16 16:29:58 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2019-09-16 16:30:00 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2019-09-16 16:30:02 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2019-09-16 16:31:04 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2019-09-16 16:31:06 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2019-09-16 16:31:13 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2019-09-16 16:32:25 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2019-09-16 16:32:30 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2019-10-07 15:42:23 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2019-10-07 15:42:31 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2019-10-07 15:42:32 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Application could not be found.
+Exception Attributes: array (
+  'class' => 'Application',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+#0 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(39): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(91): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(123): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(168): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(96): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\webroot\index.php(40): Cake\Http\Server->run()
+#17 {main}
+Request URL: /Application
+
+
+2019-10-07 15:42:37 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2019-10-07 15:43:36 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2019-10-07 15:43:51 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2019-10-07 15:44:25 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2019-10-07 15:45:31 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2019-10-07 15:45:55 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2019-10-07 15:46:08 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2019-10-07 15:46:14 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2019-10-07 15:47:25 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2019-10-07 15:47:31 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2019-10-07 15:47:53 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2019-10-07 15:48:31 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2019-10-07 15:49:16 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2019-10-07 15:49:32 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2019-10-07 15:49:55 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2019-10-07 15:50:00 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2019-10-07 15:51:06 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2019-10-07 15:51:22 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2019-10-07 15:51:47 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2019-10-07 15:53:06 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2019-10-07 15:53:19 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2019-10-07 15:53:26 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2019-10-07 15:54:03 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2019-10-07 15:55:03 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2019-10-07 15:55:43 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2019-10-07 15:55:47 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2019-10-07 15:56:03 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2019-10-07 15:57:58 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2019-10-07 15:59:31 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2019-10-07 15:59:44 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2019-10-07 16:04:38 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2019-10-07 16:04:42 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2019-10-07 16:06:22 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2019-10-07 16:06:33 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2019-10-07 16:08:22 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2019-10-07 16:10:43 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2019-10-07 16:10:44 Error: [ParseError] syntax error, unexpected '>'
+#0 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\View\View.php(1380): Cake\View\View->_evaluate('C:\\UniServerZ\\w...', Array)
+#1 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\View\View.php(880): Cake\View\View->_render('C:\\UniServerZ\\w...')
+#2 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Controller\Controller.php(796): Cake\View\View->render(NULL, NULL)
+#3 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(126): Cake\Controller\Controller->render()
+#4 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\PaiementsController))
+#5 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(123): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(168): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(96): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\webroot\index.php(40): Cake\Http\Server->run()
+#20 {main}
+Request URL: /paiements
+
+
+2019-10-07 16:11:03 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2019-10-07 16:11:39 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2019-10-07 16:11:46 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2019-10-07 16:12:05 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2019-10-07 16:12:06 Error: [RuntimeException] Cannot insert row in "evaluations_paiements" table, it has no primary key.
+#0 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(2021): Cake\ORM\Table->_insert(Object(App\Model\Entity\EvaluationsPaiement), Array)
+#1 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(1934): Cake\ORM\Table->_processSave(Object(App\Model\Entity\EvaluationsPaiement), Object(ArrayObject))
+#2 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(1639): Cake\ORM\Table->Cake\ORM\{closure}()
+#3 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Connection.php(738): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#4 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(1640): Cake\Database\Connection->transactional(Object(Closure))
+#5 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(1935): Cake\ORM\Table->_executeTransaction(Object(Closure), true)
+#6 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Association\BelongsToMany.php(851): Cake\ORM\Table->save(Object(App\Model\Entity\EvaluationsPaiement), Object(ArrayObject))
+#7 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Association\BelongsToMany.php(795): Cake\ORM\Association\BelongsToMany->_saveLinks(Object(App\Model\Entity\Evaluation), Array, Array)
+#8 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Association\BelongsToMany.php(1225): Cake\ORM\Association\BelongsToMany->_saveTarget(Object(App\Model\Entity\Evaluation), Array, Array)
+#9 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Connection.php(738): Cake\ORM\Association\BelongsToMany->Cake\ORM\Association\{closure}(Object(Cake\Database\Connection))
+#10 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Association\BelongsToMany.php(1244): Cake\Database\Connection->transactional(Object(Closure))
+#11 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Association\BelongsToMany.php(729): Cake\ORM\Association\BelongsToMany->replaceLinks(Object(App\Model\Entity\Evaluation), Array, Array)
+#12 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\AssociationCollection.php(321): Cake\ORM\Association\BelongsToMany->saveAssociated(Object(App\Model\Entity\Evaluation), Array)
+#13 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\AssociationCollection.php(295): Cake\ORM\AssociationCollection->_save(Object(Cake\ORM\Association\BelongsToMany), Object(App\Model\Entity\Evaluation), Array, Array)
+#14 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\AssociationCollection.php(260): Cake\ORM\AssociationCollection->_saveAssociations(Object(App\Model\Table\EvaluationsTable), Object(App\Model\Entity\Evaluation), Array, Array, true)
+#15 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(2054): Cake\ORM\AssociationCollection->saveChildren(Object(App\Model\Table\EvaluationsTable), Object(App\Model\Entity\Evaluation), Array, Array)
+#16 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(2027): Cake\ORM\Table->_onSaveSuccess(Object(App\Model\Entity\Evaluation), Object(ArrayObject))
+#17 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(1934): Cake\ORM\Table->_processSave(Object(App\Model\Entity\Evaluation), Object(ArrayObject))
+#18 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(1639): Cake\ORM\Table->Cake\ORM\{closure}()
+#19 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Connection.php(738): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#20 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(1640): Cake\Database\Connection->transactional(Object(Closure))
+#21 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(1935): Cake\ORM\Table->_executeTransaction(Object(Closure), true)
+#22 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\src\Controller\EvaluationsController.php(53): Cake\ORM\Table->save(Object(App\Model\Entity\Evaluation))
+#23 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Controller\Controller.php(610): App\Controller\EvaluationsController->add()
+#24 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#25 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\EvaluationsController))
+#26 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#27 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#28 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#29 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(123): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#30 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#31 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#32 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(168): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#33 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#34 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#35 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#36 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(96): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#37 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#38 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#39 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#40 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\webroot\index.php(40): Cake\Http\Server->run()
+#41 {main}
+Request URL: /evaluations/add
+Referer URL: http://localhost/Cours_5B7_TP/Cours_5B7_TP1/evaluations/add
+
+
+2019-10-07 16:12:44 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2019-10-07 16:12:45 Error: [RuntimeException] Cannot insert row in "evaluations_paiements" table, it has no primary key.
+#0 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(2021): Cake\ORM\Table->_insert(Object(App\Model\Entity\EvaluationsPaiement), Array)
+#1 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(1934): Cake\ORM\Table->_processSave(Object(App\Model\Entity\EvaluationsPaiement), Object(ArrayObject))
+#2 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(1639): Cake\ORM\Table->Cake\ORM\{closure}()
+#3 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Connection.php(738): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#4 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(1640): Cake\Database\Connection->transactional(Object(Closure))
+#5 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(1935): Cake\ORM\Table->_executeTransaction(Object(Closure), true)
+#6 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Association\BelongsToMany.php(851): Cake\ORM\Table->save(Object(App\Model\Entity\EvaluationsPaiement), Object(ArrayObject))
+#7 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Association\BelongsToMany.php(795): Cake\ORM\Association\BelongsToMany->_saveLinks(Object(App\Model\Entity\Evaluation), Array, Array)
+#8 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Association\BelongsToMany.php(1225): Cake\ORM\Association\BelongsToMany->_saveTarget(Object(App\Model\Entity\Evaluation), Array, Array)
+#9 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Connection.php(738): Cake\ORM\Association\BelongsToMany->Cake\ORM\Association\{closure}(Object(Cake\Database\Connection))
+#10 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Association\BelongsToMany.php(1244): Cake\Database\Connection->transactional(Object(Closure))
+#11 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Association\BelongsToMany.php(729): Cake\ORM\Association\BelongsToMany->replaceLinks(Object(App\Model\Entity\Evaluation), Array, Array)
+#12 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\AssociationCollection.php(321): Cake\ORM\Association\BelongsToMany->saveAssociated(Object(App\Model\Entity\Evaluation), Array)
+#13 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\AssociationCollection.php(295): Cake\ORM\AssociationCollection->_save(Object(Cake\ORM\Association\BelongsToMany), Object(App\Model\Entity\Evaluation), Array, Array)
+#14 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\AssociationCollection.php(260): Cake\ORM\AssociationCollection->_saveAssociations(Object(App\Model\Table\EvaluationsTable), Object(App\Model\Entity\Evaluation), Array, Array, true)
+#15 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(2054): Cake\ORM\AssociationCollection->saveChildren(Object(App\Model\Table\EvaluationsTable), Object(App\Model\Entity\Evaluation), Array, Array)
+#16 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(2027): Cake\ORM\Table->_onSaveSuccess(Object(App\Model\Entity\Evaluation), Object(ArrayObject))
+#17 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(1934): Cake\ORM\Table->_processSave(Object(App\Model\Entity\Evaluation), Object(ArrayObject))
+#18 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(1639): Cake\ORM\Table->Cake\ORM\{closure}()
+#19 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Connection.php(738): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#20 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(1640): Cake\Database\Connection->transactional(Object(Closure))
+#21 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(1935): Cake\ORM\Table->_executeTransaction(Object(Closure), true)
+#22 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\src\Controller\EvaluationsController.php(53): Cake\ORM\Table->save(Object(App\Model\Entity\Evaluation))
+#23 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Controller\Controller.php(610): App\Controller\EvaluationsController->add()
+#24 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#25 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\EvaluationsController))
+#26 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#27 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#28 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#29 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(123): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#30 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#31 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#32 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(168): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#33 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#34 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#35 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#36 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(96): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#37 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#38 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#39 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#40 C:\UniServerZ\www\Cours_5B7_TP\Cours_5B7_TP1\webroot\index.php(40): Cake\Http\Server->run()
+#41 {main}
+Request URL: /evaluations/add
+Referer URL: http://localhost/Cours_5B7_TP/Cours_5B7_TP1/evaluations/add
+
+
+2019-10-07 16:13:55 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2019-10-07 16:13:56 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2019-10-07 16:14:05 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2019-10-07 16:14:14 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2019-10-07 16:15:03 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2019-10-07 16:15:12 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2019-10-07 16:15:28 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2019-10-07 16:15:31 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2019-10-07 16:15:35 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2019-10-07 16:15:36 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2019-10-07 16:15:47 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2019-10-07 16:16:07 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2019-10-07 16:17:53 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2019-10-07 16:18:04 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2019-10-07 16:18:18 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2019-10-07 16:18:42 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2019-10-07 16:18:50 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2019-10-07 16:19:04 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2019-10-07 16:19:16 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2019-10-07 16:19:34 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2019-10-07 16:20:17 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2019-10-07 16:20:31 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2019-10-07 16:20:55 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2019-10-07 16:21:28 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2019-10-07 16:21:48 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2019-10-07 16:22:00 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2019-10-07 16:22:08 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2019-10-07 17:12:24 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
