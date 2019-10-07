@@ -21,20 +21,12 @@
     <h3><?= h($application->name) ?></h3>
     <table class="vertical-table">
         <tr>
-            <th scope="row"><?= __('Name') ?></th>
-            <td><?= h($application->name) ?></td>
+            <th scope="row"><?= __('Prix') ?></th>
+            <td><?= $this->Number->format($application->prix) . ' $' ?></td>
         </tr>
         <tr>
             <th scope="row"><?= __('Description') ?></th>
-            <td><?= h($application->description) ?></td>
-        </tr>
-        <tr>
-            <th scope="row"><?= __('Id') ?></th>
-            <td><?= $this->Number->format($application->id) ?></td>
-        </tr>
-        <tr>
-            <th scope="row"><?= __('Prix') ?></th>
-            <td><?= $this->Number->format($application->prix) ?></td>
+            <td><?= h($application->description != '' ? $application->description : 'N/A') ?></td>
         </tr>
         <tr>
             <th scope="row"><?= __('Evaluation') ?></th>
@@ -85,22 +77,20 @@
         <?php if (!empty($application->paiements)): ?>
         <table cellpadding="0" cellspacing="0">
             <tr>
-                <th scope="col"><?= __('Id') ?></th>
-                <th scope="col"><?= __('Application Id') ?></th>
+                <th scope="col"><?= __('No. Facture') ?></th>
                 <th scope="col"><?= __('Type Paiement Id') ?></th>
                 <th scope="col"><?= __('Numero Carte') ?></th>
-                <th scope="col"><?= __('Created') ?></th>
-                <th scope="col"><?= __('Modified') ?></th>
+                <!-- <th scope="col"><?= __('Created') ?></th>
+                <th scope="col"><?= __('Modified') ?></th> -->
                 <th scope="col" class="actions"><?= __('Actions') ?></th>
             </tr>
             <?php foreach ($application->paiements as $paiements): ?>
             <tr>
                 <td><?= h($paiements->id) ?></td>
-                <td><?= h($paiements->application_id) ?></td>
                 <td><?= h($paiements->type_paiement_id) ?></td>
-                <td><?= h($paiements->numero_carte) ?></td>
-                <td><?= h($paiements->created) ?></td>
-                <td><?= h($paiements->modified) ?></td>
+                <td><?= h('************' . substr($paiements->numero_carte, 10)) ?></td>
+                <!-- <td><?= h($paiements->created) ?></td>
+                <td><?= h($paiements->modified) ?></td> -->
                 <td class="actions">
                     <?= $this->Html->link(__('View'), ['controller' => 'Paiements', 'action' => 'view', $paiements->id]) ?>
                     <?= $this->Html->link(__('Edit'), ['controller' => 'Paiements', 'action' => 'edit', $paiements->id]) ?>

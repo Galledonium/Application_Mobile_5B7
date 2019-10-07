@@ -37,7 +37,7 @@ class PaiementsController extends AppController
     public function view($id = null)
     {
         $paiement = $this->Paiements->get($id, [
-            'contain' => ['Applications', 'TypesPaiements', 'Evaluations']
+            'contain' => ['Applications', 'TypesPaiements']
         ]);
 
         $this->set('paiement', $paiement);
