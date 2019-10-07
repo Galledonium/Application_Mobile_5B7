@@ -39,10 +39,6 @@
             <td><?= $this->Number->format($paiement->id) ?></td>
         </tr>
         <tr>
-            <th scope="row"><?= __('Evaluation Id') ?></th>
-            <td><?= $this->Number->format($paiement->evaluation_id) ?></td>
-        </tr>
-        <tr>
             <th scope="row"><?= __('Created') ?></th>
             <td><?= h($paiement->created) ?></td>
         </tr>

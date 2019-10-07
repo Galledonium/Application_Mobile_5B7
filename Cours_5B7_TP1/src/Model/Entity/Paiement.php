@@ -10,7 +10,6 @@ use Cake\ORM\Entity;
  * @property int $application_id
  * @property int $type_paiement_id
  * @property string $numero_carte
- * @property int|null $evaluation_id
  * @property \Cake\I18n\FrozenTime $created
  * @property \Cake\I18n\FrozenTime $modified
  *
@@ -33,7 +32,6 @@ class Paiement extends Entity
         'application_id' => true,
         'type_paiement_id' => true,
         'numero_carte' => true,
-        'evaluation_id' => true,
         'created' => true,
         'modified' => true,
         'application' => true,

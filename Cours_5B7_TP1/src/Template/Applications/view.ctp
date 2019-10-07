@@ -21,20 +21,36 @@
     <h3><?= h($application->name) ?></h3>
     <table class="vertical-table">
         <tr>
-            <th scope="row"><?= __('Prix') ?></th>
-            <td><?= $this->Number->format($application->prix) . ' $' ?></td>
+            <th scope="row"><?= __('Name') ?></th>
+            <td><?= h($application->name) ?></td>
         </tr>
         <tr>
             <th scope="row"><?= __('Description') ?></th>
-            <td><?= h($application->description != '' ? $application->description : 'Aucune description') ?></td>
+            <td><?= h($application->description) ?></td>
+        </tr>
+        <tr>
+            <th scope="row"><?= __('Id') ?></th>
+            <td><?= $this->Number->format($application->id) ?></td>
+        </tr>
+        <tr>
+            <th scope="row"><?= __('Prix') ?></th>
+            <td><?= $this->Number->format($application->prix) ?></td>
         </tr>
         <tr>
             <th scope="row"><?= __('Evaluation') ?></th>
-            <td><?= $this->Number->format($application->evaluation) == 0 ? 'N/A' : $this->Number->format($application->evaluation)?></td>
+            <td><?= $this->Number->format($application->evaluation) ?></td>
+        </tr>
+        <tr>
+            <th scope="row"><?= __('Created') ?></th>
+            <td><?= h($application->created) ?></td>
+        </tr>
+        <tr>
+            <th scope="row"><?= __('Modified') ?></th>
+            <td><?= h($application->modified) ?></td>
         </tr>
     </table>
     <div class="related">
-        <!-- <h4><?= __('Related Users') ?></h4>
+        <h4><?= __('Related Users') ?></h4>
         <?php if (!empty($application->users)): ?>
         <table cellpadding="0" cellspacing="0">
             <tr>
@@ -62,10 +78,10 @@
             </tr>
             <?php endforeach; ?>
         </table>
-        <?php endif; ?> -->
+        <?php endif; ?>
     </div>
     <div class="related">
-        <!-- <h4><?= __('Related Paiements') ?></h4>
+        <h4><?= __('Related Paiements') ?></h4>
         <?php if (!empty($application->paiements)): ?>
         <table cellpadding="0" cellspacing="0">
             <tr>
@@ -73,7 +89,6 @@
                 <th scope="col"><?= __('Application Id') ?></th>
                 <th scope="col"><?= __('Type Paiement Id') ?></th>
                 <th scope="col"><?= __('Numero Carte') ?></th>
-                <th scope="col"><?= __('Evaluation Id') ?></th>
                 <th scope="col"><?= __('Created') ?></th>
                 <th scope="col"><?= __('Modified') ?></th>
                 <th scope="col" class="actions"><?= __('Actions') ?></th>
@@ -84,7 +99,6 @@
                 <td><?= h($paiements->application_id) ?></td>
                 <td><?= h($paiements->type_paiement_id) ?></td>
                 <td><?= h($paiements->numero_carte) ?></td>
-                <td><?= h($paiements->evaluation_id) ?></td>
                 <td><?= h($paiements->created) ?></td>
                 <td><?= h($paiements->modified) ?></td>
                 <td class="actions">
@@ -94,7 +108,7 @@
                 </td>
             </tr>
             <?php endforeach; ?>
-        </table> -->
+        </table>
         <?php endif; ?>
     </div>
 </div>

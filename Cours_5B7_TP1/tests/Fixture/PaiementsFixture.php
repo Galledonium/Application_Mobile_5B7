@@ -19,7 +19,6 @@ class PaiementsFixture extends TestFixture
         'application_id' => ['type' => 'integer', 'length' => 11, 'unsigned' => false, 'null' => false, 'default' => null, 'comment' => '', 'precision' => null, 'autoIncrement' => null],
         'type_paiement_id' => ['type' => 'integer', 'length' => 2, 'unsigned' => false, 'null' => false, 'default' => null, 'comment' => '', 'precision' => null, 'autoIncrement' => null],
         'numero_carte' => ['type' => 'string', 'fixed' => true, 'length' => 15, 'null' => false, 'default' => null, 'collate' => 'utf8_general_ci', 'comment' => '', 'precision' => null],
-        'evaluation_id' => ['type' => 'integer', 'length' => 11, 'unsigned' => false, 'null' => true, 'default' => null, 'comment' => '', 'precision' => null, 'autoIncrement' => null],
         'created' => ['type' => 'datetime', 'length' => null, 'null' => false, 'default' => null, 'comment' => '', 'precision' => null],
         'modified' => ['type' => 'datetime', 'length' => null, 'null' => false, 'default' => null, 'comment' => '', 'precision' => null],
         '_indexes' => [
@@ -50,9 +49,8 @@ class PaiementsFixture extends TestFixture
                 'application_id' => 1,
                 'type_paiement_id' => 1,
                 'numero_carte' => 'Lorem ipsum d',
-                'evaluation_id' => 1,
-                'created' => '2019-10-07 16:17:30',
-                'modified' => '2019-10-07 16:17:30'
+                'created' => '2019-10-07 17:51:28',
+                'modified' => '2019-10-07 17:51:28'
             ],
         ];
         parent::init();

@@ -23,6 +23,7 @@
             echo $this->Form->control('description');
             echo $this->Form->control('prix');
             echo $this->Form->control('evaluation');
+            echo $this->Form->control('users._ids', ['options' => $users]);
         ?>
     </fieldset>
     <?= $this->Form->button(__('Submit')) ?>

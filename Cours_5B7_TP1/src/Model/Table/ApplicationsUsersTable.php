@@ -34,6 +34,8 @@ class ApplicationsUsersTable extends Table
         parent::initialize($config);
 
         $this->setTable('applications_users');
+        $this->setDisplayField('id');
+        $this->setPrimaryKey('id');
 
         $this->belongsTo('Users', [
             'foreignKey' => 'user_id',
@@ -43,6 +45,21 @@ class ApplicationsUsersTable extends Table
             'foreignKey' => 'application_id',
             'joinType' => 'INNER'
         ]);
+    }
+
+    /**
+     * Default validation rules.
+     *
+     * @param \Cake\Validation\Validator $validator Validator instance.
+     * @return \Cake\Validation\Validator
+     */
+    public function validationDefault(Validator $validator)
+    {
+        $validator
+            ->integer('id')
+            ->allowEmptyString('id', null, 'create');
+
+        return $validator;
     }
 
     /**

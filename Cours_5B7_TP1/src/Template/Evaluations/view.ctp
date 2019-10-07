@@ -48,7 +48,6 @@
                 <th scope="col"><?= __('Application Id') ?></th>
                 <th scope="col"><?= __('Type Paiement Id') ?></th>
                 <th scope="col"><?= __('Numero Carte') ?></th>
-                <th scope="col"><?= __('Evaluation Id') ?></th>
                 <th scope="col"><?= __('Created') ?></th>
                 <th scope="col"><?= __('Modified') ?></th>
                 <th scope="col" class="actions"><?= __('Actions') ?></th>
@@ -59,7 +58,6 @@
                 <td><?= h($paiements->application_id) ?></td>
                 <td><?= h($paiements->type_paiement_id) ?></td>
                 <td><?= h($paiements->numero_carte) ?></td>
-                <td><?= h($paiements->evaluation_id) ?></td>
                 <td><?= h($paiements->created) ?></td>
                 <td><?= h($paiements->modified) ?></td>
                 <td class="actions">

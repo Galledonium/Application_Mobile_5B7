@@ -19,20 +19,26 @@
     <table cellpadding="0" cellspacing="0">
         <thead>
             <tr>
+                <th scope="col"><?= $this->Paginator->sort('id') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('name') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('description') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('prix') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('evaluation') ?></th>
+                <th scope="col"><?= $this->Paginator->sort('created') ?></th>
+                <th scope="col"><?= $this->Paginator->sort('modified') ?></th>
                 <th scope="col" class="actions"><?= __('Actions') ?></th>
             </tr>
         </thead>
         <tbody>
             <?php foreach ($applications as $application): ?>
             <tr>
+                <td><?= $this->Number->format($application->id) ?></td>
                 <td><?= h($application->name) ?></td>
-                <td><?= h($application->description != '' ? $application->description : 'Aucune description') ?></td>
+                <td><?= h($application->description) ?></td>
                 <td><?= $this->Number->format($application->prix) ?></td>
-                <td><?= $this->Number->format($application->evaluation) == 0 ? 'N/A' : $this->Number->format($application->evaluation) ?></td>
+                <td><?= $this->Number->format($application->evaluation) ?></td>
+                <td><?= h($application->created) ?></td>
+                <td><?= h($application->modified) ?></td>
                 <td class="actions">
                     <?= $this->Html->link(__('View'), ['action' => 'view', $application->id]) ?>
                     <?= $this->Html->link(__('Edit'), ['action' => 'edit', $application->id]) ?>

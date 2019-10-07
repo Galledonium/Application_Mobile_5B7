@@ -20,7 +20,7 @@ class PaiementsController extends AppController
     public function index()
     {
         $this->paginate = [
-            'contain' => ['Applications', 'TypesPaiements', 'Evaluations']
+            'contain' => ['Applications', 'TypesPaiements']
         ];
         $paiements = $this->paginate($this->Paiements);
 

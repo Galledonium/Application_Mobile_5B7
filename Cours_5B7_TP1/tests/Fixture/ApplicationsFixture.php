@@ -45,8 +45,8 @@ class ApplicationsFixture extends TestFixture
                 'description' => 'Lorem ipsum dolor sit amet',
                 'prix' => 1.5,
                 'evaluation' => 1,
-                'created' => '2019-09-10 16:20:17',
-                'modified' => '2019-09-10 16:20:17'
+                'created' => '2019-10-07 17:51:28',
+                'modified' => '2019-10-07 17:51:28'
             ],
         ];
         parent::init();

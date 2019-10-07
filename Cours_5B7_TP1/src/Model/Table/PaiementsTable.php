@@ -11,8 +11,6 @@ use Cake\Validation\Validator;
  *
  * @property \App\Model\Table\ApplicationsTable&\Cake\ORM\Association\BelongsTo $Applications
  * @property \App\Model\Table\TypesPaiementsTable&\Cake\ORM\Association\BelongsTo $TypesPaiements
- * @property \App\Model\Table\EvaluationsTable&\Cake\ORM\Association\BelongsTo $Evaluations
- * @property \App\Model\Table\EvaluationsTable&\Cake\ORM\Association\BelongsToMany $Evaluations
  *
  * @method \App\Model\Entity\Paiement get($primaryKey, $options = [])
  * @method \App\Model\Entity\Paiement newEntity($data = null, array $options = [])
@@ -51,14 +49,6 @@ class PaiementsTable extends Table
             'foreignKey' => 'type_paiement_id',
             'joinType' => 'INNER'
         ]);
-        $this->belongsTo('Evaluations', [
-            'foreignKey' => 'evaluation_id'
-        ]);
-        $this->belongsToMany('Evaluations', [
-            'foreignKey' => 'paiement_id',
-            'targetForeignKey' => 'evaluation_id',
-            'joinTable' => 'evaluations_paiements'
-        ]);
     }
 
     /**
@@ -93,7 +83,6 @@ class PaiementsTable extends Table
     {
         $rules->add($rules->existsIn(['application_id'], 'Applications'));
         $rules->add($rules->existsIn(['type_paiement_id'], 'TypesPaiements'));
-        $rules->add($rules->existsIn(['evaluation_id'], 'Evaluations'));
 
         return $rules;
     }

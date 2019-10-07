@@ -9,9 +9,6 @@ use Cake\Validation\Validator;
 /**
  * Evaluations Model
  *
- * @property \App\Model\Table\PaiementsTable&\Cake\ORM\Association\HasMany $Paiements
- * @property \App\Model\Table\PaiementsTable&\Cake\ORM\Association\BelongsToMany $Paiements
- *
  * @method \App\Model\Entity\Evaluation get($primaryKey, $options = [])
  * @method \App\Model\Entity\Evaluation newEntity($data = null, array $options = [])
  * @method \App\Model\Entity\Evaluation[] newEntities(array $data, array $options = [])
@@ -40,15 +37,6 @@ class EvaluationsTable extends Table
         $this->setPrimaryKey('id');
 
         $this->addBehavior('Timestamp');
-
-        $this->hasMany('Paiements', [
-            'foreignKey' => 'evaluation_id'
-        ]);
-        $this->belongsToMany('Paiements', [
-            'foreignKey' => 'evaluation_id',
-            'targetForeignKey' => 'paiement_id',
-            'joinTable' => 'evaluations_paiements'
-        ]);
     }
 
     /**

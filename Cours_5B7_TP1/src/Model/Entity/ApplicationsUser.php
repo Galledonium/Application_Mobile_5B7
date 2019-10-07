@@ -6,6 +6,7 @@ use Cake\ORM\Entity;
 /**
  * ApplicationsUser Entity
  *
+ * @property int $id
  * @property int $user_id
  * @property int $application_id
  *
