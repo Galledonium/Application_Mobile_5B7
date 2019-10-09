@@ -25,8 +25,7 @@ class PaiementsTableTest extends TestCase
     public $fixtures = [
         'app.Paiements',
         'app.Applications',
-        'app.TypesPaiements',
-        'app.Evaluations'
+        'app.TypesPaiements'
     ];
 
     /**

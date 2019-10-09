@@ -9,6 +9,7 @@ use Cake\Validation\Validator;
 /**
  * Users Model
  *
+ * @property &\Cake\ORM\Association\HasMany $Paiements
  * @property \App\Model\Table\ApplicationsTable&\Cake\ORM\Association\BelongsToMany $Applications
  *
  * @method \App\Model\Entity\User get($primaryKey, $options = [])
@@ -35,11 +36,14 @@ class UsersTable extends Table
         parent::initialize($config);
 
         $this->setTable('users');
-        $this->setDisplayField('id');
+        $this->setDisplayField('username');
         $this->setPrimaryKey('id');
 
         $this->addBehavior('Timestamp');
 
+        $this->hasMany('Paiements', [
+            'foreignKey' => 'user_id'
+        ]);
         $this->belongsToMany('Applications', [
             'foreignKey' => 'user_id',
             'targetForeignKey' => 'application_id',
@@ -58,6 +62,10 @@ class UsersTable extends Table
         $validator
             ->integer('id')
             ->allowEmptyString('id', null, 'create');
+
+        $validator
+            ->requirePresence('permissions', 'create')
+            ->notEmptyString('permissions');
 
         $validator
             ->scalar('username')

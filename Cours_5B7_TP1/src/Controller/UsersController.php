@@ -13,6 +13,7 @@ use Cake\ORM\TableRegistry;
  */
 class UsersController extends AppController
 {
+    private $userEnLigne;
 
     public function initialize()
     {
@@ -24,6 +25,7 @@ class UsersController extends AppController
     {
         $action = $this->request->getParam('action');
 
+        $this->userEnLigne = $userCourant;
 
         // if($userCourant['permissions'] === 0){ COMMENT: Visiteur
 
@@ -37,27 +39,11 @@ class UsersController extends AppController
 
         if($userCourant['permissions'] === 1){ //COMMENT: Utilisateur
 
-            $users = TableRegistry::get('Users');
-
-            $users = TableRegistry::getTableLocator()->get('Users');
-
-            $user = $users->find()->first();
-
+            if (in_array($action, ['add', 'index', 'edit', 'delete', 'view'])) {
             
-
-            if(in_array($action, ['edit'])){
-
-                if($user->id != $userCourant['id']){
-
-                    debug($user->id);
-                    die();
-
-                }
-            }
-
                 return true;
 
-            return false;
+            }
 
         } 
 
@@ -85,7 +71,23 @@ class UsersController extends AppController
      */
     public function index()
     {
-        $users = $this->paginate($this->Users);
+
+        $users1 = TableRegistry::get('Users');
+
+        $users1 = TableRegistry::getTableLocator()->get('Users');
+
+        if($this->userEnLigne['permissions'] == 1){
+
+            $users = $this->paginate($users1->find()
+            ->where(['id' => $this->userEnLigne['id']]));
+
+        }else if($this->userEnLigne['permissions'] == 2){
+
+            $users = $this->paginate($this->Users);
+
+        }
+        // $users = $this->paginate($this->Users);
+
 
         $this->set(compact('users'));
     }
@@ -178,7 +180,7 @@ class UsersController extends AppController
             $user = $this->Auth->identify();
             if ($user) {
                 $this->Auth->setUser($user);
-                return $this->redirect($this->Auth->redirectUrl());
+                return $this->redirect(['controller' => 'Applications', 'action' => 'index']);
             }
             $this->Flash->error('Votre identifiant ou votre mot de passe est incorrect.');
         }

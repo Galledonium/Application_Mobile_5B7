@@ -22,9 +22,7 @@ class PaiementsControllerTest extends TestCase
     public $fixtures = [
         'app.Paiements',
         'app.Applications',
-        'app.TypesPaiements',
-        'app.Evaluations',
-        'app.EvaluationsPaiements'
+        'app.TypesPaiements'
     ];
 
     /**

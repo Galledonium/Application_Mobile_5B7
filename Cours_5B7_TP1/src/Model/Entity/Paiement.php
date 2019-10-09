@@ -9,13 +9,13 @@ use Cake\ORM\Entity;
  * @property int $id
  * @property int $application_id
  * @property int $type_paiement_id
+ * @property int $user_id
  * @property string $numero_carte
  * @property \Cake\I18n\FrozenTime $created
  * @property \Cake\I18n\FrozenTime $modified
  *
  * @property \App\Model\Entity\Application $application
  * @property \App\Model\Entity\TypesPaiement $types_paiement
- * @property \App\Model\Entity\Evaluation[] $evaluations
  */
 class Paiement extends Entity
 {
@@ -31,11 +31,11 @@ class Paiement extends Entity
     protected $_accessible = [
         'application_id' => true,
         'type_paiement_id' => true,
+        'user_id' => true,
         'numero_carte' => true,
         'created' => true,
         'modified' => true,
         'application' => true,
-        'types_paiement' => true,
-        'evaluations' => true
+        'types_paiement' => true
     ];
 }

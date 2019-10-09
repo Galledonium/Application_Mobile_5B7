@@ -32,16 +32,16 @@
             <th scope="row"><?= __('Evaluation') ?></th>
             <td><?= $this->Number->format($application->evaluation) ?></td>
         </tr>
-        <tr>
+        <!-- <tr>
             <th scope="row"><?= __('Created') ?></th>
             <td><?= h($application->created) ?></td>
         </tr>
         <tr>
             <th scope="row"><?= __('Modified') ?></th>
             <td><?= h($application->modified) ?></td>
-        </tr>
+        </tr> -->
     </table>
-    <div class="related">
+    <!-- <div class="related">
         <h4><?= __('Related Users') ?></h4>
         <?php if (!empty($application->users)): ?>
         <table cellpadding="0" cellspacing="0">
@@ -71,8 +71,8 @@
             <?php endforeach; ?>
         </table>
         <?php endif; ?>
-    </div>
-    <div class="related">
+    </div> -->
+    <!-- <div class="related">
         <h4><?= __('Related Paiements') ?></h4>
         <?php if (!empty($application->paiements)): ?>
         <table cellpadding="0" cellspacing="0">
@@ -80,17 +80,17 @@
                 <th scope="col"><?= __('No. Facture') ?></th>
                 <th scope="col"><?= __('Type Paiement Id') ?></th>
                 <th scope="col"><?= __('Numero Carte') ?></th>
-                <!-- <th scope="col"><?= __('Created') ?></th>
-                <th scope="col"><?= __('Modified') ?></th> -->
+                 <th scope="col"><?= __('Created') ?></th>
+                <th scope="col"><?= __('Modified') ?></th> 
                 <th scope="col" class="actions"><?= __('Actions') ?></th>
             </tr>
             <?php foreach ($application->paiements as $paiements): ?>
             <tr>
                 <td><?= h($paiements->id) ?></td>
-                <td><?= h($paiements->type_paiement_id) ?></td>
+                <td><?= h($paiements->type_paiement_id)?></td>
                 <td><?= h('************' . substr($paiements->numero_carte, 10)) ?></td>
-                <!-- <td><?= h($paiements->created) ?></td>
-                <td><?= h($paiements->modified) ?></td> -->
+                <td><?= h($paiements->created) ?>
+                <td><?= h($paiements->modified) ?></td>
                 <td class="actions">
                     <?= $this->Html->link(__('View'), ['controller' => 'Paiements', 'action' => 'view', $paiements->id]) ?>
                     <?= $this->Html->link(__('Edit'), ['controller' => 'Paiements', 'action' => 'edit', $paiements->id]) ?>
@@ -100,5 +100,5 @@
             <?php endforeach; ?>
         </table>
         <?php endif; ?>
-    </div>
+    </div> -->
 </div>

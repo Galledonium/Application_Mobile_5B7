@@ -12,6 +12,9 @@ use App\Controller\AppController;
  */
 class PaiementsController extends AppController
 {
+
+    private $userEnLigne;
+
     /**
      * Index method
      *
@@ -25,6 +28,19 @@ class PaiementsController extends AppController
         $paiements = $this->paginate($this->Paiements);
 
         $this->set(compact('paiements'));
+    }
+
+    public function isAuthorized($userCourant)
+    {
+
+        $this->userEnLigne = $userCourant;
+
+        if($userCourant['permissions'] === 1){
+
+            return true;
+
+        }
+
     }
 
     /**
@@ -61,9 +77,19 @@ class PaiementsController extends AppController
             $this->Flash->error(__('The paiement could not be saved. Please, try again.'));
         }
         $applications = $this->Paiements->Applications->find('list', ['limit' => 200]);
-        $typesPaiements = $this->Paiements->TypesPaiements->find('list', ['limit' => 200]);
-        $evaluations = $this->Paiements->Evaluations->find('list', ['limit' => 200]);
-        $this->set(compact('paiement', 'applications', 'typesPaiements', 'evaluations'));
+        $typesPaiements = $this->Paiements->TypesPaiements->find('list', ['limit' => 200, 'valueField' => 'typePaiement']);
+
+        if($this->userEnLigne['permissions'] === 1){
+
+            $users = $this->Paiements->Users->find('list', ['limit' => 200])->where(['id' => $this->userEnLigne['id']]);
+
+        }else if($this->userEnLigne['permissions'] === 2){
+
+            $users = $this->Paiements->Users->find('list', ['limit' => 200]);
+
+        }
+        
+        $this->set(compact('paiement', 'applications', 'typesPaiements', 'users'));
     }
 
     /**
