@@ -2,6 +2,7 @@
 namespace App\Controller;
 
 use App\Controller\AppController;
+use Cake\ORM\TableRegistry;
 
 /**
  * Users Controller
@@ -18,7 +19,65 @@ class UsersController extends AppController
         parent::initialize();
         $this->Auth->allow(['logout', 'add']);
     }
-    
+
+    public function isAuthorized($userCourant)
+    {
+        $action = $this->request->getParam('action');
+
+
+        // if($userCourant['permissions'] === 0){ COMMENT: Visiteur
+
+        //     if(in_array($action, ['index', 'edit', 'delete', 'view'])){
+
+        //         return false;
+
+        //     }
+
+        // }
+
+        if($userCourant['permissions'] === 1){ //COMMENT: Utilisateur
+
+            $users = TableRegistry::get('Users');
+
+            $users = TableRegistry::getTableLocator()->get('Users');
+
+            $user = $users->find()->first();
+
+            
+
+            if(in_array($action, ['edit'])){
+
+                if($user->id != $userCourant['id']){
+
+                    debug($user->id);
+                    die();
+
+                }
+            }
+
+                return true;
+
+            return false;
+
+        } 
+
+        if($userCourant['permissions'] === 2){ //COMMENT: Administrateur
+
+            if (in_array($action, ['add', 'index', 'edit', 'delete', 'view'])) {
+            
+                return true;
+
+            }
+
+            return false;
+        }
+
+        
+        // Par défaut, on refuse l'accès.
+        return false;
+
+    }
+
     /**
      * Index method
      *
