@@ -37,7 +37,7 @@ class UsersController extends AppController
 
         // }
 
-        if($userCourant['permissions'] === 1){ //COMMENT: Utilisateur
+        if($userCourant['permissions'] === 1 || $userCourant['permissions'] === 2){ //COMMENT: Utilisateur
 
             if (in_array($action, ['add', 'index', 'edit', 'delete', 'view'])) {
             
@@ -46,19 +46,6 @@ class UsersController extends AppController
             }
 
         } 
-
-        if($userCourant['permissions'] === 2){ //COMMENT: Administrateur
-
-            if (in_array($action, ['add', 'index', 'edit', 'delete', 'view'])) {
-            
-                return true;
-
-            }
-
-            return false;
-        }
-
-        
         // Par défaut, on refuse l'accès.
         return false;
 
@@ -118,6 +105,9 @@ class UsersController extends AppController
         $user = $this->Users->newEntity();
         if ($this->request->is('post')) {
             $user = $this->Users->patchEntity($user, $this->request->getData());
+
+            $user->id = $this->Auth->user('id');
+
             if ($this->Users->save($user)) {
                 $this->Flash->success(__('The user has been saved.'));
 

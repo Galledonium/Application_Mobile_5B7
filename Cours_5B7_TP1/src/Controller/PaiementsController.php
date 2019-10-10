@@ -2,6 +2,7 @@
 namespace App\Controller;
 
 use App\Controller\AppController;
+use Cake\ORM\TableRegistry;
 
 /**
  * Paiements Controller
@@ -15,6 +16,12 @@ class PaiementsController extends AppController
 
     private $userEnLigne;
 
+
+    public function initialize()
+    {
+        parent::initialize();
+        $this->Auth->allow(['logout', 'add']);
+    }
     /**
      * Index method
      *
@@ -23,9 +30,28 @@ class PaiementsController extends AppController
     public function index()
     {
         $this->paginate = [
-            'contain' => ['Applications', 'TypesPaiements']
+            'contain' => ['Applications', 'TypesPaiements', 'Users']
         ];
-        $paiements = $this->paginate($this->Paiements);
+        // $paiements = $this->paginate($this->Paiements);
+
+        $tablePaiements = TableRegistry::get('Paiements');
+
+        $tablePaiements = TableRegistry::getTableLocator()->get('Paiements');
+
+        if($this->userEnLigne['permissions'] == 1){
+
+            $paiements = $this->paginate($tablePaiements->find()
+            ->where(['user_id' => $this->userEnLigne['id']]));
+
+        }else if($this->userEnLigne['permissions'] == 2){
+
+            $paiements = $this->paginate($this->Paiements);
+
+        }
+        // $users = $this->paginate($this->Users);
+
+
+        // $this->set(compact('users'));
 
         $this->set(compact('paiements'));
     }
@@ -33,13 +59,21 @@ class PaiementsController extends AppController
     public function isAuthorized($userCourant)
     {
 
+        $action = $this->request->getParam('action');
+
         $this->userEnLigne = $userCourant;
 
         if($userCourant['permissions'] === 1){
 
-            return true;
+            if(in_array($action, ['delete'])){
+
+                return false;
+
+            }
 
         }
+
+        return true;
 
     }
 
