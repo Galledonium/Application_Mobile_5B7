@@ -61,6 +61,16 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
                     <!-- <li><a target="_blank" href="https://book.cakephp.org/3.0/">Documentation</a></li>
                     <li><a target="_blank" href="https://api.cakephp.org/3.0/">API</a></li> -->
                 </li>
+
+                <li>
+                
+                    <?php
+                    
+                        echo $this->Html->link('Changer la langue', ['controller' => 'Localizations', 'action' => 'index']);
+
+                    ?>
+
+                </li>
             </ul>
         </div>
     </nav>
