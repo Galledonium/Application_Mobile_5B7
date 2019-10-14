@@ -220,6 +220,22 @@ return [
         ],
     ],
 
+    'gmail'=> [
+          'host' => 'ssl://smtp.gmail.com',
+          'port' => 465,
+          'username' => 'appMobile@gmail.com',
+          'password' => '$2y$10$OAZhFxqTiTwJa7U5X3YgqOdWt9fBFT3cvzqDZK00vXOaTeKI69are',
+          'className' => 'Smtp',
+          'log' => true,
+          'context' => [
+            'ssl' => [
+                'verify_peer' => false,
+                'verify_peer_name' => false,
+                'allow_self_signed' => true
+            ]
+          ]
+        ],
+
     /**
      * Email delivery profiles
      *
