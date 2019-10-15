@@ -59,6 +59,8 @@ class UsersController extends AppController
     public function index()
     {
 
+        $user = $this->request->getSession()->read('Auth.User');
+
         $users1 = TableRegistry::get('Users');
 
         $users1 = TableRegistry::getTableLocator()->get('Users');
@@ -66,7 +68,7 @@ class UsersController extends AppController
         if($this->userEnLigne['permissions'] == 1){
 
             $users = $this->paginate($users1->find()
-            ->where(['id' => $this->userEnLigne['id']]));
+            ->where(['id' => $user['id']]));
 
         }else if($this->userEnLigne['permissions'] == 2){
 
@@ -105,9 +107,6 @@ class UsersController extends AppController
         $user = $this->Users->newEntity();
         if ($this->request->is('post')) {
             $user = $this->Users->patchEntity($user, $this->request->getData());
-
-            $user->id = $this->Auth->user('id');
-
             // $user->permission = 1; //TODO A voir
 
             if ($this->Users->save($user)) {

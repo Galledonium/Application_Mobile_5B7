@@ -12,6 +12,17 @@ use App\Controller\AppController;
  */
 class ApplicationsController extends AppController
 {
+
+    public function initialize(){
+        parent::initialize();
+        
+        // Include the FlashComponent
+        $this->loadComponent('Flash');
+        
+        // Load Files model
+        $this->loadModel('Files');
+ 
+    }
     /**
      * Index method
      *
@@ -48,6 +59,7 @@ class ApplicationsController extends AppController
         //Files
 
         $uploadData = '';
+        $uploadPath = 'uploads/files/';
         if ($this->request->is('post')) {
             if(!empty($this->request->data['file']['name'])){
                 $fileName = $this->request->data['file']['name'];

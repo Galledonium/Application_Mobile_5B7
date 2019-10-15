@@ -19,9 +19,11 @@
     <fieldset>
         <legend><?= __('Add Paiement') ?></legend>
         <?php
+            $user = $this->request->getSession()->read('Auth.User');
+        
             echo $this->Form->control('application_id', ['options' => $applications]);
             echo $this->Form->control('type_paiement_id', ['options' => $typesPaiements]);
-            echo $this->Form->control('user_id', ['options' => $users]);
+            echo $this->Form->control('user_id', ['options' => $users, 'type' => 'hidden', 'default' => $user['id']]);
             echo $this->Form->control('numero_carte');
         ?>
     </fieldset>
