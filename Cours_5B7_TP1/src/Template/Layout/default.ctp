@@ -15,7 +15,7 @@
  * @license       https://opensource.org/licenses/mit-license.php MIT License
  */
 
-$cakeDescription = 'Achat d\'applications';
+$cakeDescription = __('msgDesc');
 ?>
 <!DOCTYPE html>
 <html>
@@ -38,7 +38,7 @@ $cakeDescription = 'Achat d\'applications';
     <nav class="top-bar expanded" data-topbar role="navigation">
         <ul class="title-area large-3 medium-4 columns">
             <li class="name">
-                <h1><a href=""><?= $this->fetch('title') ?></a></h1>
+                <h1><a href=""><?= $this->fetch(__('msgTitre')) ?></a></h1>
             </li>
         </ul>
         <div class="top-bar-section">
@@ -49,12 +49,12 @@ $cakeDescription = 'Achat d\'applications';
                         $loguser = $this->request->session()->read('Auth.User');
                     
                         if ($loguser) {
-                            $user = $loguser['email'];
-                            echo $this->Html->link($user . ' logout', ['controller' => 'Users', 'action' => 'logout']);
+                            $user = $loguser['username'];
+                            echo $this->Html->link(__('msgBienvenue') . ', ' . $user, ['controller' => 'Users', 'action' => 'view', $loguser['id']]);
                         
                         } else {
 
-                            echo $this->Html->link('login', ['controller' => 'Users', 'action' => 'login']);
+                            echo $this->Html->link('msglogin', ['controller' => 'Users', 'action' => 'login']);
                             
                         }
 
@@ -62,12 +62,22 @@ $cakeDescription = 'Achat d\'applications';
                     <!-- <li><a target="_blank" href="https://book.cakephp.org/3.0/">Documentation</a></li>
                     <li><a target="_blank" href="https://api.cakephp.org/3.0/">API</a></li> -->
                 </li>
+
+                <li>
+
+                    <?php
+
+                        echo $this->Html->link(__('msglogout'), ['controller' => 'Localizations', 'action' => 'index']);
+
+                    ?>
+                
+                </li>
                 
                 <li>
 
                     <?php
 
-                        echo $this->Html->link('Langue', ['controller' => 'Localizations', 'action' => 'index']);
+                        echo $this->Html->link(__('lang'), ['controller' => 'Localizations', 'action' => 'index']);
 
                     ?>
                 

@@ -24,3 +24,21 @@ msgstr "French"
 
 msgid "traductionJaponais"
 msgstr "Japanese"
+
+msgid "msgDesc"
+msgstr "Mobile App Store"
+
+msgid "msgTitre"
+msgstr "Applications"
+
+msgid "msgActions"
+msgstr "ACTIONS"
+
+msgid "msgBienvenue"
+msgstr "Welcome"
+
+msgid "msglogin"
+msgstr "login"
+
+msgid "msglogout"
+msgstr "logout"

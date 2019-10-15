@@ -24,3 +24,21 @@ msgstr "フランス語"
 
 msgid "traductionJaponais"
 msgstr "日本語"
+
+msgid "msgDesc"
+msgstr "アプリストア"
+
+msgid "msgTitre"
+msgstr "アプリ"
+
+msgid "msgActions"
+msgstr "行動"
+
+msgid "msgBienvenue"
+msgstr "ようこそ"
+
+msgid "msglogin"
+msgstr "ログインする"
+
+msgid "msglogout"
+msgstr "ログアウト"
