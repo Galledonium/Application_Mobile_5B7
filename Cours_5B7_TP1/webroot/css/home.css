@@ -237,4 +237,18 @@ hr {
     header.row {
         max-width: 940px;
     }
+
+
+.submenu{
+    padding: 10px;
+    display: none;
+    position: absolute;
+    background-color: #0D101C;
+    z-index: 1;
+}
+
+nav > ul > li:hover > .submenu{
+    display: block;
+    z-index: 1;
+}
 }

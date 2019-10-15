@@ -4,7 +4,7 @@
       ['value'=>'en_US','text'=>'English'],
       ['value'=>'fr_CA','text'=>'French'],
    ]);
-   echo $this->Form->button('Change Language');
+   echo $this->Form->button(__('Change Language'));
    echo $this->Form->end();
 ?>
 <?php echo __('msg'); ?>

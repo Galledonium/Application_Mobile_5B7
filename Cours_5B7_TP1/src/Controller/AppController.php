@@ -16,6 +16,7 @@ namespace App\Controller;
 
 use Cake\Controller\Controller;
 use Cake\Event\Event;
+use Cake\I18n\I18n;
 
 /**
  * Application Controller
@@ -71,10 +72,27 @@ class AppController extends Controller
         'unauthorizedRedirect' => $this->referer()
         ]);
 
+        I18n::setLocale($this->request->session()->read('Config.language'));
+
+        $this->Auth->allow(['changelang']);
+
         // Permet à l'action "display" de notre PagesController de continuer
         // à fonctionner. Autorise également les actions "read-only".
         $this->Auth->allow(['display']); //-> COMMENT: pour forcer le login dès le début pour le moment.
     }
+
+    public function changeLang($lang = 'en_US') {
+        
+        I18n::setLocale($lang);
+        $this->request->session()->write('Config.language', $lang);
+    }
+
+    public function getLang(){
+
+        return $this->langCourante;
+
+    }
+    
 
     public function isAuthorized($user)
     {

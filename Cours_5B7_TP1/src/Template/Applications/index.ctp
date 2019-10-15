@@ -7,11 +7,21 @@
 <nav class="large-3 medium-4 columns" id="actions-sidebar">
     <ul class="side-nav">
         <li class="heading"><?= __('Actions') ?></li>
-        <li><?= $this->Html->link(__('New Application'), ['action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('Mes Paiements'), ['controller' => 'Paiements', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('Acheter une application'), ['controller' => 'Paiements', 'action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List Users'), ['controller' => 'Users', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('Creer un compte'), ['controller' => 'Users', 'action' => 'add']) ?></li>
+
+        <?php $user = $this->request->getSession()->read('Auth.User') ?>
+        
+        <li><?= $this->Html->link(__('msgAfficherPaiements'), ['controller' => 'Paiements', 'action' => 'index']) ?></li>
+        <li><?= $this->Html->link(__('msgAcheter'), ['controller' => 'Paiements', 'action' => 'add']) ?></li>
+
+        <?php
+            if($user['permissions'] === 2){
+
+                echo '<li>' . $this->Html->link(__('New Application'), ['action' => 'add']) . '</li>';
+                echo '<li>' . $this->Html->link(__('List Users'), ['controller' => 'Users', 'action' => 'index']) . '</li>';
+
+            }
+
+        ?>
     </ul>
 </nav>
 <div class="applications index large-9 medium-8 columns content">

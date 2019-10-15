@@ -1,19 +1,19 @@
 # LANGUAGE translation of CakePHP Application
 # Copyright YEAR NAME <EMAIL@ADDRESS>
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "POT-Creation-Date: 2019-10-14 17:39-0400\n"
-"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
-"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2019-10-14 17:39-0400\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Poedit 2.2.4\n"
+"Last-Translator: \n"
+"Language: en_US\n"
 
 #: /Controller/ApplicationsController.php:65
 #: /Controller/ApplicationsController.php:90
@@ -327,7 +327,9 @@ msgstr ""
 #: /Template/Evaluations/index.ctp:53
 #: /Template/EvaluationsPaiements/index.ctp:51 /Template/Paiements/index.ctp:59
 #: /Template/TypesPaiements/index.ctp:45 /Template/Users/index.ctp:57
-msgid "Page {{page}} of {{pages}}, showing {{current}} record(s) out of {{count}} total"
+msgid ""
+"Page {{page}} of {{pages}}, showing {{current}} record(s) out of {{count}} "
+"total"
 msgstr ""
 
 #: /Template/Applications/view.ctp:11

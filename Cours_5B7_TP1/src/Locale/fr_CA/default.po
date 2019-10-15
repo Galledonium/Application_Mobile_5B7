@@ -1,2 +1,14 @@
 msgid "msg"
-msgstr "TEST FR"
+msgstr "Exemple CakePHP internationalisation."
+
+msgid "lang"
+msgstr "Langue"
+
+msgid "langchg"
+msgstr "Changer le langage"
+
+msgid "msgAfficherPaiements"
+msgstr "Mes Paiements"
+
+msgid "msgAcheter"
+msgstr "Acheter"

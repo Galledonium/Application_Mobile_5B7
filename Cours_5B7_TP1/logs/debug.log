@@ -2557,3 +2557,155 @@ Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
 
 
 
+2019-10-14 22:05:40 Notice: Notice (8): Use of undefined constant ICL_LANGUAGE_CODE - assumed 'ICL_LANGUAGE_CODE' in [C:\UniServerZ\www\GIT_Cours_5A5_TP\Application_Mobile_5B7\Cours_5B7_TP1\src\Template\Layout\default.ctp, line 69]
+Request URL: /users
+Referer URL: http://localhost/GIT_Cours_5A5_TP/Application_Mobile_5B7/Cours_5B7_TP1/locale
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 42
+include - APP/Template\Layout\default.ctp, line 69
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1419
+Cake\View\View::_render() - CORE\src\View\View.php, line 1380
+Cake\View\View::renderLayout() - CORE\src\View\View.php, line 927
+Cake\View\View::render() - CORE\src\View\View.php, line 885
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 796
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 126
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Middleware\CsrfProtectionMiddleware::__invoke() - CORE\src\Http\Middleware\CsrfProtectionMiddleware.php, line 123
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 168
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 96
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-10-14 22:11:12 Notice: Notice (8): Use of undefined constant locale_get_display_language - assumed 'locale_get_display_language' in [C:\UniServerZ\www\GIT_Cours_5A5_TP\Application_Mobile_5B7\Cours_5B7_TP1\src\Template\Layout\default.ctp, line 69]
+Request URL: /users
+Referer URL: http://localhost/GIT_Cours_5A5_TP/Application_Mobile_5B7/Cours_5B7_TP1/locale
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 42
+include - APP/Template\Layout\default.ctp, line 69
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1419
+Cake\View\View::_render() - CORE\src\View\View.php, line 1380
+Cake\View\View::renderLayout() - CORE\src\View\View.php, line 927
+Cake\View\View::render() - CORE\src\View\View.php, line 885
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 796
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 126
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Middleware\CsrfProtectionMiddleware::__invoke() - CORE\src\Http\Middleware\CsrfProtectionMiddleware.php, line 123
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 168
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 96
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-10-14 22:13:47 Notice: Notice (8): Use of undefined constant fr_CA - assumed 'fr_CA' in [C:\UniServerZ\www\GIT_Cours_5A5_TP\Application_Mobile_5B7\Cours_5B7_TP1\src\Template\Layout\default.ctp, line 75]
+Request URL: /users
+Referer URL: http://localhost/GIT_Cours_5A5_TP/Application_Mobile_5B7/Cours_5B7_TP1/locale
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 42
+include - APP/Template\Layout\default.ctp, line 75
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1419
+Cake\View\View::_render() - CORE\src\View\View.php, line 1380
+Cake\View\View::renderLayout() - CORE\src\View\View.php, line 927
+Cake\View\View::render() - CORE\src\View\View.php, line 885
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 796
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 126
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Middleware\CsrfProtectionMiddleware::__invoke() - CORE\src\Http\Middleware\CsrfProtectionMiddleware.php, line 123
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 168
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 96
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-10-14 23:07:39 Notice: Notice (8): Undefined property: App\Application::$request in [C:\UniServerZ\www\GIT_Cours_5A5_TP\Application_Mobile_5B7\Cours_5B7_TP1\config\routes.php, line 67]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 42
+Cake\Http\BaseApplication::{closure}() - ROOT\config\routes.php, line 67
+Cake\Routing\RouteBuilder::scope() - CORE\src\Routing\RouteBuilder.php, line 1009
+Cake\Routing\Router::scope() - CORE\src\Routing\Router.php, line 1098
+require - ROOT\config\routes.php, line 96
+Cake\Http\BaseApplication::routes() - CORE\src\Http\BaseApplication.php, line 179
+Cake\Routing\Middleware\RoutingMiddleware::prepareRouteCollection() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 115
+Cake\Routing\Middleware\RoutingMiddleware::buildRouteCollection() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 104
+Cake\Routing\Middleware\RoutingMiddleware::loadRoutes() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 87
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 136
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 96
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-10-14 23:53:57 Notice: Notice (8): Use of undefined constant Francais - assumed 'Francais' in [C:\UniServerZ\www\GIT_Cours_5A5_TP\Application_Mobile_5B7\Cours_5B7_TP1\src\Template\Layout\default.ctp, line 71]
+Request URL: /
+Referer URL: http://localhost/GIT_Cours_5A5_TP/Application_Mobile_5B7/Cours_5B7_TP1/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 42
+include - APP/Template\Layout\default.ctp, line 71
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1419
+Cake\View\View::_render() - CORE\src\View\View.php, line 1380
+Cake\View\View::renderLayout() - CORE\src\View\View.php, line 927
+Cake\View\View::render() - CORE\src\View\View.php, line 885
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 796
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 126
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Middleware\CsrfProtectionMiddleware::__invoke() - CORE\src\Http\Middleware\CsrfProtectionMiddleware.php, line 123
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 168
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 96
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+

@@ -22,9 +22,10 @@
         public function index(){
             if($this->request->is('post')){
                 $locale = $this->request->data('locale');
-                I18n::locale($locale);
 
-                return $this->redirect(['controller' => 'Users', 'action' => 'index']); //TODO Verifier la redirection apres le changement de langue
+                parent::changeLang($locale);
+
+                return $this->redirect(['controller' => 'Applications', 'action' => 'index']);
             }
         } 
     }

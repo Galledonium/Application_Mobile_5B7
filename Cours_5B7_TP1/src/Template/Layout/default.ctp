@@ -1,4 +1,6 @@
+
 <?php
+
 /**
  * CakePHP(tm) : Rapid Development Framework (https://cakephp.org)
  * Copyright (c) Cake Software Foundation, Inc. (https://cakefoundation.org)
@@ -13,7 +15,7 @@
  * @license       https://opensource.org/licenses/mit-license.php MIT License
  */
 
-$cakeDescription = 'CakePHP: the rapid development php framework';
+$cakeDescription = 'Achat d\'applications';
 ?>
 <!DOCTYPE html>
 <html>
@@ -21,8 +23,7 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
     <?= $this->Html->charset() ?>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
-        <?= $cakeDescription ?>:
-        <?= $this->fetch('title') ?>
+        <?= $cakeDescription ?>
     </title>
     <?= $this->Html->meta('icon') ?>
 
@@ -61,16 +62,17 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
                     <!-- <li><a target="_blank" href="https://book.cakephp.org/3.0/">Documentation</a></li>
                     <li><a target="_blank" href="https://api.cakephp.org/3.0/">API</a></li> -->
                 </li>
-
-                <li>
                 
+                <li>
+
                     <?php
-                    
-                        echo $this->Html->link('Changer la langue', ['controller' => 'Localizations', 'action' => 'index']);
+
+                        echo $this->Html->link('Langue', ['controller' => 'Localizations', 'action' => 'index']);
 
                     ?>
-
+                
                 </li>
+
             </ul>
         </div>
     </nav>
