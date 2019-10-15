@@ -12,3 +12,12 @@ msgstr "Mes Paiements"
 
 msgid "msgAcheter"
 msgstr "Acheter"
+
+msgid "traductionAnglais"
+msgstr "Anglais"
+
+msgid "traductionFrancais"
+msgstr "Fran\u00E7ais"
+
+msgid "traductionJaponais"
+msgstr "Japonais"

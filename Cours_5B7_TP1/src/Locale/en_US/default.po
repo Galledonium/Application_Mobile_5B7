@@ -12,3 +12,12 @@ msgstr "My Orders"
 
 msgid "msgAcheter"
 msgstr "Buy"
+
+msgid "traductionAnglais"
+msgstr "English"
+
+msgid "traductionFrancais"
+msgstr "French"
+
+msgid "traductionJaponais"
+msgstr "Japanese"
