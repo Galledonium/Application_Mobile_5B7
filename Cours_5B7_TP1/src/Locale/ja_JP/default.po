@@ -1,3 +1,6 @@
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
 msgid "msg"
 msgstr "CakePHPの国際化の例。"
 
@@ -5,7 +8,7 @@ msgid "lang"
 msgstr "言語"
 
 msgid "langchg"
-msgstr "言語を変更するe"
+msgstr "言語を変えてください"
 
 msgid "msgAfficherPaiements"
 msgstr "私の支払い"
