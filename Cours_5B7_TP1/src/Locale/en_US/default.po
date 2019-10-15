@@ -40,5 +40,8 @@ msgstr "Welcome"
 msgid "msglogin"
 msgstr "login"
 
+msgid "msgCreerCompte"
+msgstr "Sign up"
+
 msgid "msglogout"
 msgstr "logout"

@@ -6,7 +6,7 @@
 ?>
 <nav class="large-3 medium-4 columns" id="actions-sidebar">
     <ul class="side-nav">
-        <li class="heading"><?= __('Actions') ?></li>
+        <li class="heading"><?= __('msgActions') ?></li>
 
         <?php $user = $this->request->getSession()->read('Auth.User') ?>
         
@@ -25,7 +25,7 @@
     </ul>
 </nav>
 <div class="applications index large-9 medium-8 columns content">
-    <h3><?= __('Applications') ?></h3>
+    <h3><?= __('msgTitre') ?></h3>
     <table cellpadding="0" cellspacing="0">
         <thead>
             <tr>

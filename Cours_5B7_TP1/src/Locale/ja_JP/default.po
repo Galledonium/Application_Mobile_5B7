@@ -40,5 +40,8 @@ msgstr "ようこそ"
 msgid "msglogin"
 msgstr "ログインする"
 
+msgid "msgCreerCompte"
+msgstr "サインアップ"
+
 msgid "msglogout"
 msgstr "ログアウト"

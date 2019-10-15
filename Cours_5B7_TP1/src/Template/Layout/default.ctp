@@ -54,7 +54,7 @@ $cakeDescription = __('msgDesc');
                         
                         } else {
 
-                            echo $this->Html->link('msglogin', ['controller' => 'Users', 'action' => 'login']);
+                            echo $this->Html->link(__('msglogin'), ['controller' => 'Users', 'action' => 'login']);
                             
                         }
 
@@ -63,11 +63,30 @@ $cakeDescription = __('msgDesc');
                     <li><a target="_blank" href="https://api.cakephp.org/3.0/">API</a></li> -->
                 </li>
 
+                <?php
+
+                        $loguser = $this->request->session()->read('Auth.User');
+                    
+                        if (!$loguser) {
+                            $user = $loguser['username'];
+                            echo $this->Html->link(__('msgCreerCompte'), ['controller' => 'Users', 'action' => 'add']);
+                        
+                        }
+
+                    ?>
+                </li>
+
                 <li>
 
                     <?php
 
-                        echo $this->Html->link(__('msglogout'), ['controller' => 'Localizations', 'action' => 'index']);
+                        $loguser = $this->request->session()->read('Auth.User');
+
+                        if($loguser){
+                            
+                            echo $this->Html->link(__('msglogout'), ['controller' => 'Users', 'action' => 'logout']);
+
+                        }
 
                     ?>
                 

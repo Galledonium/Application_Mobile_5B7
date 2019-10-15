@@ -223,8 +223,8 @@ return [
     'gmail'=> [
           'host' => 'ssl://smtp.gmail.com',
           'port' => 465,
-          'username' => 'appMobile@gmail.com',
-          'password' => '$2y$10$OAZhFxqTiTwJa7U5X3YgqOdWt9fBFT3cvzqDZK00vXOaTeKI69are',
+          'username' => 'yabeoure@gmail.com',
+          'password' => '$2y$10$BYhsNh51NiPOIFnn8hZP0eGNJy4MC2IwikZyLMGzM4qju45idpBgm',
           'className' => 'Smtp',
           'log' => true,
           'context' => [

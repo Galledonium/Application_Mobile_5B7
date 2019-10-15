@@ -59,13 +59,15 @@ Router::scope('/', function (RouteBuilder $routes) {
 
     $routes->connect('locale', ['controller'=>'Localizations','action'=>'index']);
 
+    $routes->connect('/email',['controller'=>'Emails','action'=>'index']);
+
     /**
      * Here, we are connecting '/' (base path) to a controller called 'Pages',
      * its action called 'display', and we pass a param to select the view file
      * to use (in this case, src/Template/Pages/home.ctp)...
      */
 
-    $routes->connect('/', ['controller' => 'Applications', 'action' => 'view']);
+    $routes->connect('/', ['controller' => 'Applications', 'action' => 'index']);
 
     /**
      * ...and connect the rest of 'Pages' controller's URLs.
