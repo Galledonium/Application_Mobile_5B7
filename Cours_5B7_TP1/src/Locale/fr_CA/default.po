@@ -20,7 +20,7 @@ msgid "traductionAnglais"
 msgstr "Anglais"
 
 msgid "traductionFrancais"
-msgstr "Fran\u00E7ais"
+msgstr "Français"
 
 msgid "traductionJaponais"
 msgstr "Japonais"
