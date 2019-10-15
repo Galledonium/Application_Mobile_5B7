@@ -108,6 +108,8 @@ class UsersController extends AppController
 
             $user->id = $this->Auth->user('id');
 
+            // $user->permission = 1; //TODO A voir
+
             if ($this->Users->save($user)) {
                 $this->Flash->success(__('The user has been saved.'));
 
