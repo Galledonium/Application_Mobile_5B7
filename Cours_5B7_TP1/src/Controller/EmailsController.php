@@ -18,7 +18,7 @@
     
     public function index(){
          $email = new Email('default');
-         $email->to('abc@gmail.com')->subject('About')->send('My message');
+         $email->to('gregsondestin@gmail.com')->subject('About')->send('My message');
       }
    }
 ?>

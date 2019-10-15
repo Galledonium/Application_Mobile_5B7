@@ -63,6 +63,12 @@ class PaiementsController extends AppController
 
         $this->userEnLigne = $userCourant;
 
+
+        if($userCourant['permissions'] === 0){
+
+            return false;
+
+        }
         if($userCourant['permissions'] === 1){
 
             if(in_array($action, ['delete'])){
@@ -100,6 +106,8 @@ class PaiementsController extends AppController
      */
     public function add()
     {
+        $user = $this->request->getSession()->read('Auth.User');
+
         $paiement = $this->Paiements->newEntity();
         if ($this->request->is('post')) {
             $paiement = $this->Paiements->patchEntity($paiement, $this->request->getData());
@@ -112,16 +120,10 @@ class PaiementsController extends AppController
         }
         $applications = $this->Paiements->Applications->find('list', ['limit' => 200]);
         $typesPaiements = $this->Paiements->TypesPaiements->find('list', ['limit' => 200, 'valueField' => 'typePaiement']);
+        $users = $this->Paiements->Users->find('list', ['limit' => 200])->where(['id' => $user['id']]);
 
-        if($this->userEnLigne['permissions'] === 1){
-
-            $users = $this->Paiements->Users->find('list', ['limit' => 200])->where(['id' => $this->userEnLigne['id']]);
-
-        }else if($this->userEnLigne['permissions'] === 2){
-
-            $users = $this->Paiements->Users->find('list', ['limit' => 200]);
-
-        }
+        // debug($users = $tablePaiements->find()->where(['user_id' => $this->userEnLigne['id']]));
+        // die();
         
         $this->set(compact('paiement', 'applications', 'typesPaiements', 'users'));
     }
@@ -136,7 +138,7 @@ class PaiementsController extends AppController
     public function edit($id = null)
     {
         $paiement = $this->Paiements->get($id, [
-            'contain' => ['Evaluations']
+        
         ]);
         if ($this->request->is(['patch', 'post', 'put'])) {
             $paiement = $this->Paiements->patchEntity($paiement, $this->request->getData());
@@ -149,8 +151,7 @@ class PaiementsController extends AppController
         }
         $applications = $this->Paiements->Applications->find('list', ['limit' => 200]);
         $typesPaiements = $this->Paiements->TypesPaiements->find('list', ['limit' => 200]);
-        $evaluations = $this->Paiements->Evaluations->find('list', ['limit' => 200]);
-        $this->set(compact('paiement', 'applications', 'typesPaiements', 'evaluations'));
+        $this->set(compact('paiement', 'applications', 'typesPaiements'));
     }
 
     /**

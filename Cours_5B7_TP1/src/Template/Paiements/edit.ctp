@@ -27,7 +27,6 @@
         <?php
             echo $this->Form->control('application_id', ['options' => $applications]);
             echo $this->Form->control('type_paiement_id', ['options' => $typesPaiements]);
-            echo $this->Form->control('user_id');
             echo $this->Form->control('numero_carte');
         ?>
     </fieldset>

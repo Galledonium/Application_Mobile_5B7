@@ -44,6 +44,9 @@ class ApplicationsTable extends Table
         $this->hasMany('Paiements', [
             'foreignKey' => 'application_id'
         ]);
+        $this->hasMany('Files', [
+            'foreignKey' => 'application_id'
+        ]);
         $this->belongsToMany('Users', [
             'foreignKey' => 'application_id',
             'targetForeignKey' => 'user_id',
