@@ -27,8 +27,8 @@ class ApplicationsController extends AppController
     public function isAuthorized($userCourant)
     {
 
-        if($userCourant['permissions'] === 1){
-
+        if (in_array($action, ['index'])) {
+            
             return true;
 
         }
