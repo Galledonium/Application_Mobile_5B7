@@ -103,6 +103,16 @@ $cakeDescription = __('msgDesc');
                 
                 </li>
 
+                <li>
+
+                    <?php
+
+                        echo $this->Html->link(__('msgAPropos'), ['controller' => 'APropos', 'action' => 'index']);
+
+                    ?>
+
+                </li>
+
             </ul>
         </div>
     </nav>

@@ -45,3 +45,6 @@ msgstr "サインアップ"
 
 msgid "msglogout"
 msgstr "ログアウト"
+
+msgid "msgAPropos"
+msgstr "約"

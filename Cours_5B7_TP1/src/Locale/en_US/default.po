@@ -45,3 +45,6 @@ msgstr "Sign up"
 
 msgid "msglogout"
 msgstr "logout"
+
+msgid "msgAPropos"
+msgstr "About"
