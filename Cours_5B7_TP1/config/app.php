@@ -58,7 +58,7 @@ return [
         'wwwRoot' => WWW_ROOT,
         //'baseUrl' => env('SCRIPT_NAME'),
         'fullBaseUrl' => false,
-        'imageBaseUrl' => 'img/',
+        'imageBaseUrl' => 'uploads/files',
         'cssBaseUrl' => 'css/',
         'jsBaseUrl' => 'js/',
         'paths' => [
@@ -218,23 +218,22 @@ return [
             'tls' => null,
             'url' => env('EMAIL_TRANSPORT_DEFAULT_URL', null),
         ],
-    ],
-
-    'gmail'=> [
-          'host' => 'ssl://smtp.gmail.com',
-          'port' => 465,
-          'username' => 'yabeoure@gmail.com',
-          'password' => '$2y$10$BYhsNh51NiPOIFnn8hZP0eGNJy4MC2IwikZyLMGzM4qju45idpBgm',
-          'className' => 'Smtp',
-          'log' => true,
-          'context' => [
-            'ssl' => [
-                'verify_peer' => false,
-                'verify_peer_name' => false,
-                'allow_self_signed' => true
+        'gmail'=> [
+            'host' => 'ssl://smtp.gmail.com',
+            'port' => 465,
+            'username' => 'yabeoure@gmail.com',
+            'password' => '$2y$10$BYhsNh51NiPOIFnn8hZP0eGNJy4MC2IwikZyLMGzM4qju45idpBgm',
+            'className' => 'Smtp',
+            'log' => true,
+            'context' => [
+              'ssl' => [
+                  'verify_peer' => false,
+                  'verify_peer_name' => false,
+                  'allow_self_signed' => true
+              ]
             ]
-          ]
-        ],
+          ],
+    ],
 
     /**
      * Email delivery profiles

@@ -8,4 +8,3 @@
    echo $this->Form->button(__('langchg'));
    echo $this->Form->end();
 ?>
-<?php echo __('msg'); ?>

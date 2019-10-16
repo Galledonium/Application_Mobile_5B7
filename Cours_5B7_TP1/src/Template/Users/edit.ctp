@@ -23,7 +23,14 @@
     <fieldset>
         <legend><?= __('Edit User') ?></legend>
         <?php
-            echo $this->Form->control('permissions');
+
+            $userCourant = $this->request->getSession()->read('Auth.User');
+
+            if($userCourant['permissions'] === 2){
+
+                echo $this->Form->control('permissions');
+
+            }
             echo $this->Form->control('username');
             echo $this->Form->control('password');
             echo $this->Form->control('email');

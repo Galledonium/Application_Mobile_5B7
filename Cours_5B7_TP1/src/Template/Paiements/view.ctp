@@ -9,12 +9,9 @@
         <li class="heading"><?= __('Actions') ?></li>
         <li><?= $this->Html->link(__('Edit Paiement'), ['action' => 'edit', $paiement->id]) ?> </li>
         <li><?= $this->Form->postLink(__('Delete Paiement'), ['action' => 'delete', $paiement->id], ['confirm' => __('Are you sure you want to delete # {0}?', $paiement->id)]) ?> </li>
-        <li><?= $this->Html->link(__('List Paiements'), ['action' => 'index']) ?> </li>
+        <li><?= $this->Html->link(__('msgAfficherPaiements'), ['action' => 'index']) ?> </li>
         <li><?= $this->Html->link(__('New Paiement'), ['action' => 'add']) ?> </li>
-        <li><?= $this->Html->link(__('List Applications'), ['controller' => 'Applications', 'action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('New Application'), ['controller' => 'Applications', 'action' => 'add']) ?> </li>
-        <li><?= $this->Html->link(__('List Types Paiements'), ['controller' => 'TypesPaiements', 'action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('New Types Paiement'), ['controller' => 'TypesPaiements', 'action' => 'add']) ?> </li>
+        <li><?= $this->Html->link(__('msgTitre'), ['controller' => 'Applications', 'action' => 'index']) ?> </li>
     </ul>
 </nav>
 <div class="paiements view large-9 medium-8 columns content">

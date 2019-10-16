@@ -9,7 +9,7 @@
         {
             $action = $this->request->getParam('action');
             
-            if($user['permissions'] === 1){
+            if($user['permissions'] === 1 || $user['permissions'] === 2){
 
                 return true;
 

@@ -71,6 +71,7 @@ class PaiementsTable extends Table
         $validator
             ->scalar('numero_carte')
             ->maxLength('numero_carte', 15)
+            ->creditCard('numero_carte')
             ->requirePresence('numero_carte', 'create')
             ->notEmptyString('numero_carte');
 

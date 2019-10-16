@@ -24,6 +24,19 @@ class TypesPaiementsController extends AppController
         $this->set(compact('typesPaiements'));
     }
 
+    public function isAuthorized($userCourant)
+    {
+
+        if($userCourant['permissions'] !== 2){
+
+            return false;
+
+        }
+
+        return true;
+
+    }
+
     /**
      * View method
      *

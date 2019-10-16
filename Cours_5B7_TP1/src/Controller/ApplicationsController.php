@@ -59,7 +59,6 @@ class ApplicationsController extends AppController
         //Files
 
         $uploadData = '';
-        $uploadPath = 'uploads/files/';
         if ($this->request->is('post')) {
             if(!empty($this->request->data['file']['name'])){
                 $fileName = $this->request->data['file']['name'];

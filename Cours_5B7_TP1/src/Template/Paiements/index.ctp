@@ -23,7 +23,7 @@
                 <th scope="col"><?= $this->Paginator->sort('application_id') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('type_paiement_id') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('Acheté le') ?></th>
-                <th scope="col" class="actions"><?= __('Actions') ?></th>
+                <th scope="col" class="actions"><?= __('msgActions') ?></th>
             </tr>
         </thead>
         <tbody>

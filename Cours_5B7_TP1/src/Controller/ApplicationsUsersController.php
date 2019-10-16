@@ -27,6 +27,19 @@ class ApplicationsUsersController extends AppController
         $this->set(compact('applicationsUsers'));
     }
 
+    public function isAuthorized($userCourant)
+    {
+
+        if($userCourant['permissions'] !== 2){
+
+            return false;
+
+        }
+
+        return true;
+
+    }
+
     /**
      * View method
      *

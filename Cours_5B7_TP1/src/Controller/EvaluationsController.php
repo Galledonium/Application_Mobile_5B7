@@ -24,6 +24,19 @@ class EvaluationsController extends AppController
         $this->set(compact('evaluations'));
     }
 
+    public function isAuthorized($userCourant)
+    {
+
+        if($userCourant['permissions'] !== 2){
+
+            return false;
+
+        }
+
+        return true;
+
+    }
+
     /**
      * View method
      *

@@ -33,7 +33,7 @@
                 <th scope="col"><?= $this->Paginator->sort('description') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('prix') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('evaluation') ?></th>
-                <th scope="col" class="actions"><?= __('Actions') ?></th>
+                <th scope="col" class="actions"><?= __('msgActions') ?></th>
             </tr>
         </thead>
         <tbody>

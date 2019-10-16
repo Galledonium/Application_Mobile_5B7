@@ -65,7 +65,8 @@ class UsersTable extends Table
 
         $validator
             ->requirePresence('permissions', 'create')
-            ->notEmptyString('permissions');
+            ->notEmptyString('permissions')
+            ->range('permissions', [0, 2]);
 
         $validator
             ->scalar('username')
