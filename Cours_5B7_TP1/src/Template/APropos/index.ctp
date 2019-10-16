@@ -13,7 +13,7 @@
 
     echo "</br>
           <ul>Comptes users</ul>
-            <li>testboy10@gmail.com - Mot de passe: test - Compte utilisateur normal</li>
+            <li>testboy2@gmail.com - Mot de passe: testboy2 - Compte utilisateur normal</li>
             <li>testboy4@gmail.com - Mot de passe: testboy4 - Compte admin</li>
           </ul>";
 
