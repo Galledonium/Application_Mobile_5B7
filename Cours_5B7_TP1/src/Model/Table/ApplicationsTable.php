@@ -40,7 +40,7 @@ class ApplicationsTable extends Table
         $this->setPrimaryKey('id');
 
         $this->addBehavior('Timestamp');
-
+        
         $this->hasMany('Paiements', [
             'foreignKey' => 'application_id'
         ]);

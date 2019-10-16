@@ -124,13 +124,22 @@
     <!-- Table -->
         <table class="table">
             <tr>
-                <th width="5%">#</th>
                 <th width="20%">File</th>
-                <th width="12%">Upload Date</th>
+
+                <?php
+
+                    $userCourant = $this->request->getSession()->read('Auth.User');
+
+                    // if($userCourant['permissions'] === 2){
+
+                    //     echo '<th width="12%">' . __('msgActions') . '</th>';
+
+                    // }
+
+                ?>
             </tr>
             <?php if($filesRowNum > 0):$count = 0; foreach($files as $file): $count++;?>
                 <tr>
-                    <td><?php echo $count; ?></td>
                     <td><?php
                     echo $this->Html->image($file->path . $file->name, [
                         "alt"  => $file->name,
@@ -141,19 +150,24 @@
                     <!--<td><img src="<?= $file->path.$file->name ?>" width="220px" height="150px"></td>-->
 
                     <!-- <td><embed src="uploads/files/apps.45782.9007199266731945.debbc4f1-cde0-491b-8c6f-b6b015eecab6.png" width="220px" height="150px"></td> -->
-                    <td><?php echo $file->created; ?></td>
+                    <!-- <td>
+                        <?php
+                    
+                            $userCourant = $this->request->getSession()->read('Auth.User');
+
+                                if($userCourant['permissions'] === 2){
+                                
+                                    echo $this->Html->link(__('Delete'), ['controller' => 'Files', 'action' => 'delete', $file->id]);
+
+                                }
+                        ?>
+                    </td> -->
+                        
                 </tr>
             <?php endforeach; else:?>
             <tr><td colspan="3">No file(s) found......</td>
             <?php endif; ?>
     </table>
-
-    <?php
-    echo $this->Html->image("test.ico", [
-        "width" => "220px",
-        "height" => "150px"
-    ]);
-    ?>
 </div>
 </div>
 

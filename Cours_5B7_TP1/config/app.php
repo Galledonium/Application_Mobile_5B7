@@ -58,7 +58,7 @@ return [
         'wwwRoot' => WWW_ROOT,
         //'baseUrl' => env('SCRIPT_NAME'),
         'fullBaseUrl' => false,
-        'imageBaseUrl' => 'uploads/files',
+        'imageBaseUrl' => '',
         'cssBaseUrl' => 'css/',
         'jsBaseUrl' => 'js/',
         'paths' => [
@@ -218,6 +218,7 @@ return [
             'tls' => null,
             'url' => env('EMAIL_TRANSPORT_DEFAULT_URL', null),
         ],
+
         'gmail'=> [
             'host' => 'ssl://smtp.gmail.com',
             'port' => 465,
@@ -233,6 +234,7 @@ return [
               ]
             ]
           ],
+        
     ],
 
     /**

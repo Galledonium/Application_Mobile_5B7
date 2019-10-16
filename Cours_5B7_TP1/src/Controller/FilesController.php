@@ -24,6 +24,27 @@ class FilesController extends AppController
         $this->set(compact('files'));
     }
 
+    public function initialize(){
+        parent::initialize();
+        
+        $this->Auth->allow(['post', 'delete']);
+ 
+    }
+
+    public function isAuthorized($userCourant)
+    {
+        $action = $this->request->getParam('action');
+
+        if($userCourant['permissions'] === 2){
+
+            return true;
+
+        }
+
+        return false;
+
+    }
+
     /**
      * View method
      *
@@ -95,7 +116,7 @@ class FilesController extends AppController
      */
     public function delete($id = null)
     {
-        $this->request->allowMethod(['post', 'delete']);
+        
         $file = $this->Files->get($id);
         if ($this->Files->delete($file)) {
             $this->Flash->success(__('The file has been deleted.'));
