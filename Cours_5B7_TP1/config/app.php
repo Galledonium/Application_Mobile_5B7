@@ -272,6 +272,7 @@ return [
         'default' => [
             'className' => Connection::class,
             'driver' => Mysql::class,
+            // 'driver' => \Cake\Database\Driver\Sqlite::class,
             'persistent' => false,
             'host' => 'localhost',
             /*
