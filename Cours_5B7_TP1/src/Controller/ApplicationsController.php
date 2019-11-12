@@ -30,12 +30,9 @@ class ApplicationsController extends AppController
      */
     public function index()
     {
-<<<<<<< HEAD
         $this->paginate = [
             'contain' => ['Files', 'Subcategories']
         ];
-=======
->>>>>>> parent of 278faef... egs
         $applications = $this->paginate($this->Applications);
 
         $this->set(compact('applications'));
@@ -58,11 +55,7 @@ class ApplicationsController extends AppController
     public function view($id = null)
     {
         $application = $this->Applications->get($id, [
-<<<<<<< HEAD
             'contain' => ['Files', 'Subcategories', 'Users', 'Paiements']
-=======
-            'contain' => ['Users', 'Paiements']
->>>>>>> parent of 278faef... egs
         ]);
 
         $this->set('application', $application);
@@ -118,15 +111,8 @@ class ApplicationsController extends AppController
             }
             $this->Flash->error(__('The application could not be saved. Please, try again.'));
         }
-<<<<<<< HEAD
-        $files = $this->Applications->Files->find('list', ['limit' => 200]);
-        $subcategories = $this->Applications->Subcategories->find('list', ['limit' => 200]);
-        $users = $this->Applications->Users->find('list', ['limit' => 200]);
-        $this->set(compact('application', 'files', 'subcategories', 'users'));
-=======
         $users = $this->Applications->Users->find('list', ['limit' => 200]);
         $this->set(compact('application', 'users'));
->>>>>>> parent of 278faef... egs
     }
 
     /**
@@ -150,15 +136,8 @@ class ApplicationsController extends AppController
             }
             $this->Flash->error(__('The application could not be saved. Please, try again.'));
         }
-<<<<<<< HEAD
-        $files = $this->Applications->Files->find('list', ['limit' => 200]);
-        $subcategories = $this->Applications->Subcategories->find('list', ['limit' => 200]);
-        $users = $this->Applications->Users->find('list', ['limit' => 200]);
-        $this->set(compact('application', 'files', 'subcategories', 'users'));
-=======
         $users = $this->Applications->Users->find('list', ['limit' => 200]);
         $this->set(compact('application', 'users'));
->>>>>>> parent of 278faef... egs
     }
 
     /**

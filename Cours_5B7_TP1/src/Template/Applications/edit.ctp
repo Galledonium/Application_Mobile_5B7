@@ -41,11 +41,8 @@
             echo $this->Form->control('description');
             echo $this->Form->control('prix');
             echo $this->Form->control('evaluation');
-<<<<<<< HEAD
             echo $this->Form->control('file_id', ['options' => $files, 'empty' => true]);
             echo $this->Form->control('subcategorie_id', ['options' => $subcategories, 'empty' => true]);
-=======
->>>>>>> parent of 278faef... egs
             echo $this->Form->control('users._ids', ['options' => $users]);
         ?>
     </fieldset>
