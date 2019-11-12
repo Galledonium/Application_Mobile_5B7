@@ -9706,3 +9706,815 @@ Request URL: /
 Referer URL: http://localhost/GIT_Cours_5B7_TP/Application_Mobile_5B7/
 
 
+2019-11-12 22:41:59 Error: [ParseError] syntax error, unexpected '<<' (T_SL), expecting ']'
+#0 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\composer\ClassLoader.php(322): Composer\Autoload\includeFile('C:\\UniServerZ\\w...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#2 [internal function]: spl_autoload_call('App\\Controller\\...')
+#3 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Core\App.php(152): class_exists('App\\Controller\\...')
+#4 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Core\App.php(64): Cake\Core\App::_classExistsInBase('\\Controller\\App...', 'App')
+#5 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(92): Cake\Core\App::className('Applications', 'Controller', 'Controller')
+#6 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(37): Cake\Http\ControllerFactory->getControllerClass(Object(Cake\Http\ServerRequest))
+#7 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(91): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(123): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(168): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(96): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#22 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#24 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\webroot\index.php(40): Cake\Http\Server->run()
+#25 {main}
+Request URL: /
+Referer URL: http://localhost/GIT_Cours_5B7_TP/Application_Mobile_5B7/
+
+
+2019-11-12 22:41:59 Error: [PDOException] SQLSTATE[HY000]: General error: 11 database disk image is malformed in C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php on line 173
+Stack Trace:
+#0 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(173): PDOStatement->execute(NULL)
+#1 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Statement\BufferedStatement.php(146): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#2 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Statement\SqliteStatement.php(41): Cake\Database\Statement\BufferedStatement->execute(NULL)
+#3 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Connection.php(334): Cake\Database\Statement\SqliteStatement->execute()
+#4 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#5 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Connection.php(337): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#6 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Query.php(219): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#7 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(2129): Cake\Database\Query->execute()
+#8 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(2021): Cake\ORM\Table->_insert(Object(DebugKit\Model\Entity\Request), Array)
+#9 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(1934): Cake\ORM\Table->_processSave(Object(DebugKit\Model\Entity\Request), Object(ArrayObject))
+#10 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(1639): Cake\ORM\Table->Cake\ORM\{closure}()
+#11 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Connection.php(738): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#12 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(1640): Cake\Database\Connection->transactional(Object(Closure))
+#13 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(1935): Cake\ORM\Table->_executeTransaction(Object(Closure), true)
+#14 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\debug_kit\src\ToolbarService.php(250): Cake\ORM\Table->save(Object(DebugKit\Model\Entity\Request))
+#15 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(54): DebugKit\ToolbarService->saveData(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\webroot\index.php(40): Cake\Http\Server->run()
+#20 {main}
+
+
+Request URL: /
+Referer URL: http://localhost/GIT_Cours_5B7_TP/Application_Mobile_5B7/
+2019-11-12 22:42:02 Error: [ParseError] syntax error, unexpected '<<' (T_SL), expecting ']'
+#0 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\composer\ClassLoader.php(322): Composer\Autoload\includeFile('C:\\UniServerZ\\w...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#2 [internal function]: spl_autoload_call('App\\Controller\\...')
+#3 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Core\App.php(152): class_exists('App\\Controller\\...')
+#4 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Core\App.php(64): Cake\Core\App::_classExistsInBase('\\Controller\\App...', 'App')
+#5 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(92): Cake\Core\App::className('Applications', 'Controller', 'Controller')
+#6 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(37): Cake\Http\ControllerFactory->getControllerClass(Object(Cake\Http\ServerRequest))
+#7 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(91): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(123): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(168): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(96): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#22 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#24 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\webroot\index.php(40): Cake\Http\Server->run()
+#25 {main}
+Request URL: /
+Referer URL: http://localhost/GIT_Cours_5B7_TP/Application_Mobile_5B7/
+
+
+2019-11-12 22:42:03 Error: [PDOException] SQLSTATE[HY000]: General error: 11 database disk image is malformed in C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php on line 173
+Stack Trace:
+#0 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(173): PDOStatement->execute(NULL)
+#1 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Statement\BufferedStatement.php(146): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#2 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Statement\SqliteStatement.php(41): Cake\Database\Statement\BufferedStatement->execute(NULL)
+#3 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Connection.php(334): Cake\Database\Statement\SqliteStatement->execute()
+#4 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#5 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Connection.php(337): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#6 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Query.php(219): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#7 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(2129): Cake\Database\Query->execute()
+#8 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(2021): Cake\ORM\Table->_insert(Object(DebugKit\Model\Entity\Request), Array)
+#9 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(1934): Cake\ORM\Table->_processSave(Object(DebugKit\Model\Entity\Request), Object(ArrayObject))
+#10 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(1639): Cake\ORM\Table->Cake\ORM\{closure}()
+#11 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Connection.php(738): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#12 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(1640): Cake\Database\Connection->transactional(Object(Closure))
+#13 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(1935): Cake\ORM\Table->_executeTransaction(Object(Closure), true)
+#14 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\debug_kit\src\ToolbarService.php(250): Cake\ORM\Table->save(Object(DebugKit\Model\Entity\Request))
+#15 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(54): DebugKit\ToolbarService->saveData(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\webroot\index.php(40): Cake\Http\Server->run()
+#20 {main}
+
+
+Request URL: /
+Referer URL: http://localhost/GIT_Cours_5B7_TP/Application_Mobile_5B7/
+2019-11-12 22:42:03 Error: [ParseError] syntax error, unexpected '<<' (T_SL), expecting ']'
+#0 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\composer\ClassLoader.php(322): Composer\Autoload\includeFile('C:\\UniServerZ\\w...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#2 [internal function]: spl_autoload_call('App\\Controller\\...')
+#3 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Core\App.php(152): class_exists('App\\Controller\\...')
+#4 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Core\App.php(64): Cake\Core\App::_classExistsInBase('\\Controller\\App...', 'App')
+#5 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(92): Cake\Core\App::className('Applications', 'Controller', 'Controller')
+#6 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(37): Cake\Http\ControllerFactory->getControllerClass(Object(Cake\Http\ServerRequest))
+#7 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(91): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(123): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(168): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(96): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#22 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#24 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\webroot\index.php(40): Cake\Http\Server->run()
+#25 {main}
+Request URL: /
+Referer URL: http://localhost/GIT_Cours_5B7_TP/Application_Mobile_5B7/
+
+
+2019-11-12 22:42:04 Error: [PDOException] SQLSTATE[HY000]: General error: 11 database disk image is malformed in C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php on line 173
+Stack Trace:
+#0 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(173): PDOStatement->execute(NULL)
+#1 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Statement\BufferedStatement.php(146): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#2 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Statement\SqliteStatement.php(41): Cake\Database\Statement\BufferedStatement->execute(NULL)
+#3 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Connection.php(334): Cake\Database\Statement\SqliteStatement->execute()
+#4 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#5 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Connection.php(337): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#6 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Query.php(219): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#7 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(2129): Cake\Database\Query->execute()
+#8 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(2021): Cake\ORM\Table->_insert(Object(DebugKit\Model\Entity\Request), Array)
+#9 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(1934): Cake\ORM\Table->_processSave(Object(DebugKit\Model\Entity\Request), Object(ArrayObject))
+#10 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(1639): Cake\ORM\Table->Cake\ORM\{closure}()
+#11 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Connection.php(738): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#12 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(1640): Cake\Database\Connection->transactional(Object(Closure))
+#13 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(1935): Cake\ORM\Table->_executeTransaction(Object(Closure), true)
+#14 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\debug_kit\src\ToolbarService.php(250): Cake\ORM\Table->save(Object(DebugKit\Model\Entity\Request))
+#15 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(54): DebugKit\ToolbarService->saveData(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\webroot\index.php(40): Cake\Http\Server->run()
+#20 {main}
+
+
+Request URL: /
+Referer URL: http://localhost/GIT_Cours_5B7_TP/Application_Mobile_5B7/
+2019-11-12 22:42:05 Error: [ParseError] syntax error, unexpected '<<' (T_SL), expecting ']'
+#0 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\composer\ClassLoader.php(322): Composer\Autoload\includeFile('C:\\UniServerZ\\w...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#2 [internal function]: spl_autoload_call('App\\Controller\\...')
+#3 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Core\App.php(152): class_exists('App\\Controller\\...')
+#4 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Core\App.php(64): Cake\Core\App::_classExistsInBase('\\Controller\\App...', 'App')
+#5 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(92): Cake\Core\App::className('Applications', 'Controller', 'Controller')
+#6 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(37): Cake\Http\ControllerFactory->getControllerClass(Object(Cake\Http\ServerRequest))
+#7 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(91): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(123): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(168): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(96): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#22 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#24 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\webroot\index.php(40): Cake\Http\Server->run()
+#25 {main}
+Request URL: /
+Referer URL: http://localhost/GIT_Cours_5B7_TP/Application_Mobile_5B7/
+
+
+2019-11-12 22:42:05 Error: [PDOException] SQLSTATE[HY000]: General error: 11 database disk image is malformed in C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php on line 173
+Stack Trace:
+#0 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(173): PDOStatement->execute(NULL)
+#1 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Statement\BufferedStatement.php(146): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#2 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Statement\SqliteStatement.php(41): Cake\Database\Statement\BufferedStatement->execute(NULL)
+#3 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Connection.php(334): Cake\Database\Statement\SqliteStatement->execute()
+#4 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#5 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Connection.php(337): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#6 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Query.php(219): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#7 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(2129): Cake\Database\Query->execute()
+#8 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(2021): Cake\ORM\Table->_insert(Object(DebugKit\Model\Entity\Request), Array)
+#9 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(1934): Cake\ORM\Table->_processSave(Object(DebugKit\Model\Entity\Request), Object(ArrayObject))
+#10 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(1639): Cake\ORM\Table->Cake\ORM\{closure}()
+#11 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Connection.php(738): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#12 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(1640): Cake\Database\Connection->transactional(Object(Closure))
+#13 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(1935): Cake\ORM\Table->_executeTransaction(Object(Closure), true)
+#14 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\debug_kit\src\ToolbarService.php(250): Cake\ORM\Table->save(Object(DebugKit\Model\Entity\Request))
+#15 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(54): DebugKit\ToolbarService->saveData(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\webroot\index.php(40): Cake\Http\Server->run()
+#20 {main}
+
+
+Request URL: /
+Referer URL: http://localhost/GIT_Cours_5B7_TP/Application_Mobile_5B7/
+2019-11-12 22:42:06 Error: [ParseError] syntax error, unexpected '<<' (T_SL), expecting ']'
+#0 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\composer\ClassLoader.php(322): Composer\Autoload\includeFile('C:\\UniServerZ\\w...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#2 [internal function]: spl_autoload_call('App\\Controller\\...')
+#3 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Core\App.php(152): class_exists('App\\Controller\\...')
+#4 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Core\App.php(64): Cake\Core\App::_classExistsInBase('\\Controller\\App...', 'App')
+#5 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(92): Cake\Core\App::className('Applications', 'Controller', 'Controller')
+#6 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(37): Cake\Http\ControllerFactory->getControllerClass(Object(Cake\Http\ServerRequest))
+#7 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(91): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(123): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(168): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(96): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#22 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#24 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\webroot\index.php(40): Cake\Http\Server->run()
+#25 {main}
+Request URL: /
+Referer URL: http://localhost/GIT_Cours_5B7_TP/Application_Mobile_5B7/
+
+
+2019-11-12 22:42:06 Error: [PDOException] SQLSTATE[HY000]: General error: 11 database disk image is malformed in C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php on line 173
+Stack Trace:
+#0 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(173): PDOStatement->execute(NULL)
+#1 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Statement\BufferedStatement.php(146): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#2 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Statement\SqliteStatement.php(41): Cake\Database\Statement\BufferedStatement->execute(NULL)
+#3 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Connection.php(334): Cake\Database\Statement\SqliteStatement->execute()
+#4 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#5 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Connection.php(337): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#6 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Query.php(219): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#7 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(2129): Cake\Database\Query->execute()
+#8 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(2021): Cake\ORM\Table->_insert(Object(DebugKit\Model\Entity\Request), Array)
+#9 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(1934): Cake\ORM\Table->_processSave(Object(DebugKit\Model\Entity\Request), Object(ArrayObject))
+#10 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(1639): Cake\ORM\Table->Cake\ORM\{closure}()
+#11 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Connection.php(738): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#12 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(1640): Cake\Database\Connection->transactional(Object(Closure))
+#13 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(1935): Cake\ORM\Table->_executeTransaction(Object(Closure), true)
+#14 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\debug_kit\src\ToolbarService.php(250): Cake\ORM\Table->save(Object(DebugKit\Model\Entity\Request))
+#15 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(54): DebugKit\ToolbarService->saveData(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\webroot\index.php(40): Cake\Http\Server->run()
+#20 {main}
+
+
+Request URL: /
+Referer URL: http://localhost/GIT_Cours_5B7_TP/Application_Mobile_5B7/
+2019-11-12 22:42:09 Error: [ParseError] syntax error, unexpected '<<' (T_SL), expecting ']'
+#0 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\composer\ClassLoader.php(322): Composer\Autoload\includeFile('C:\\UniServerZ\\w...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#2 [internal function]: spl_autoload_call('App\\Controller\\...')
+#3 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Core\App.php(152): class_exists('App\\Controller\\...')
+#4 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Core\App.php(64): Cake\Core\App::_classExistsInBase('\\Controller\\App...', 'App')
+#5 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(92): Cake\Core\App::className('Applications', 'Controller', 'Controller')
+#6 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(37): Cake\Http\ControllerFactory->getControllerClass(Object(Cake\Http\ServerRequest))
+#7 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(91): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(123): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(168): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(96): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#22 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#24 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\webroot\index.php(40): Cake\Http\Server->run()
+#25 {main}
+Request URL: /
+Referer URL: http://localhost/GIT_Cours_5B7_TP/Application_Mobile_5B7/
+
+
+2019-11-12 22:42:09 Error: [PDOException] SQLSTATE[HY000]: General error: 11 database disk image is malformed in C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php on line 173
+Stack Trace:
+#0 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(173): PDOStatement->execute(NULL)
+#1 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Statement\BufferedStatement.php(146): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#2 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Statement\SqliteStatement.php(41): Cake\Database\Statement\BufferedStatement->execute(NULL)
+#3 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Connection.php(334): Cake\Database\Statement\SqliteStatement->execute()
+#4 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#5 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Connection.php(337): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#6 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Query.php(219): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#7 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(2129): Cake\Database\Query->execute()
+#8 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(2021): Cake\ORM\Table->_insert(Object(DebugKit\Model\Entity\Request), Array)
+#9 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(1934): Cake\ORM\Table->_processSave(Object(DebugKit\Model\Entity\Request), Object(ArrayObject))
+#10 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(1639): Cake\ORM\Table->Cake\ORM\{closure}()
+#11 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Connection.php(738): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#12 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(1640): Cake\Database\Connection->transactional(Object(Closure))
+#13 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(1935): Cake\ORM\Table->_executeTransaction(Object(Closure), true)
+#14 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\debug_kit\src\ToolbarService.php(250): Cake\ORM\Table->save(Object(DebugKit\Model\Entity\Request))
+#15 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(54): DebugKit\ToolbarService->saveData(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\webroot\index.php(40): Cake\Http\Server->run()
+#20 {main}
+
+
+Request URL: /
+Referer URL: http://localhost/GIT_Cours_5B7_TP/Application_Mobile_5B7/
+2019-11-12 22:42:10 Error: [ParseError] syntax error, unexpected '<<' (T_SL), expecting ']'
+#0 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\composer\ClassLoader.php(322): Composer\Autoload\includeFile('C:\\UniServerZ\\w...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#2 [internal function]: spl_autoload_call('App\\Controller\\...')
+#3 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Core\App.php(152): class_exists('App\\Controller\\...')
+#4 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Core\App.php(64): Cake\Core\App::_classExistsInBase('\\Controller\\App...', 'App')
+#5 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(92): Cake\Core\App::className('Applications', 'Controller', 'Controller')
+#6 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(37): Cake\Http\ControllerFactory->getControllerClass(Object(Cake\Http\ServerRequest))
+#7 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(91): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(123): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(168): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(96): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#22 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#24 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\webroot\index.php(40): Cake\Http\Server->run()
+#25 {main}
+Request URL: /
+Referer URL: http://localhost/GIT_Cours_5B7_TP/Application_Mobile_5B7/
+
+
+2019-11-12 22:42:11 Error: [PDOException] SQLSTATE[HY000]: General error: 11 database disk image is malformed in C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php on line 173
+Stack Trace:
+#0 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(173): PDOStatement->execute(NULL)
+#1 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Statement\BufferedStatement.php(146): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#2 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Statement\SqliteStatement.php(41): Cake\Database\Statement\BufferedStatement->execute(NULL)
+#3 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Connection.php(334): Cake\Database\Statement\SqliteStatement->execute()
+#4 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#5 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Connection.php(337): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#6 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Query.php(219): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#7 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(2129): Cake\Database\Query->execute()
+#8 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(2021): Cake\ORM\Table->_insert(Object(DebugKit\Model\Entity\Request), Array)
+#9 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(1934): Cake\ORM\Table->_processSave(Object(DebugKit\Model\Entity\Request), Object(ArrayObject))
+#10 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(1639): Cake\ORM\Table->Cake\ORM\{closure}()
+#11 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Connection.php(738): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#12 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(1640): Cake\Database\Connection->transactional(Object(Closure))
+#13 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(1935): Cake\ORM\Table->_executeTransaction(Object(Closure), true)
+#14 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\debug_kit\src\ToolbarService.php(250): Cake\ORM\Table->save(Object(DebugKit\Model\Entity\Request))
+#15 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(54): DebugKit\ToolbarService->saveData(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\webroot\index.php(40): Cake\Http\Server->run()
+#20 {main}
+
+
+Request URL: /
+Referer URL: http://localhost/GIT_Cours_5B7_TP/Application_Mobile_5B7/
+2019-11-12 22:42:28 Error: [ParseError] syntax error, unexpected '<<' (T_SL), expecting ']'
+#0 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\composer\ClassLoader.php(322): Composer\Autoload\includeFile('C:\\UniServerZ\\w...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#2 [internal function]: spl_autoload_call('App\\Controller\\...')
+#3 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Core\App.php(152): class_exists('App\\Controller\\...')
+#4 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Core\App.php(64): Cake\Core\App::_classExistsInBase('\\Controller\\App...', 'App')
+#5 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(92): Cake\Core\App::className('Applications', 'Controller', 'Controller')
+#6 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(37): Cake\Http\ControllerFactory->getControllerClass(Object(Cake\Http\ServerRequest))
+#7 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(91): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(123): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(168): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(96): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#22 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#24 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\webroot\index.php(40): Cake\Http\Server->run()
+#25 {main}
+Request URL: /
+Referer URL: http://localhost/GIT_Cours_5B7_TP/Application_Mobile_5B7/
+
+
+2019-11-12 22:42:28 Error: [PDOException] SQLSTATE[HY000]: General error: 11 database disk image is malformed in C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php on line 173
+Stack Trace:
+#0 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(173): PDOStatement->execute(NULL)
+#1 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Statement\BufferedStatement.php(146): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#2 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Statement\SqliteStatement.php(41): Cake\Database\Statement\BufferedStatement->execute(NULL)
+#3 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Connection.php(334): Cake\Database\Statement\SqliteStatement->execute()
+#4 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#5 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Connection.php(337): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#6 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Query.php(219): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#7 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(2129): Cake\Database\Query->execute()
+#8 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(2021): Cake\ORM\Table->_insert(Object(DebugKit\Model\Entity\Request), Array)
+#9 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(1934): Cake\ORM\Table->_processSave(Object(DebugKit\Model\Entity\Request), Object(ArrayObject))
+#10 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(1639): Cake\ORM\Table->Cake\ORM\{closure}()
+#11 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Connection.php(738): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#12 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(1640): Cake\Database\Connection->transactional(Object(Closure))
+#13 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(1935): Cake\ORM\Table->_executeTransaction(Object(Closure), true)
+#14 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\debug_kit\src\ToolbarService.php(250): Cake\ORM\Table->save(Object(DebugKit\Model\Entity\Request))
+#15 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(54): DebugKit\ToolbarService->saveData(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\webroot\index.php(40): Cake\Http\Server->run()
+#20 {main}
+
+
+Request URL: /
+Referer URL: http://localhost/GIT_Cours_5B7_TP/Application_Mobile_5B7/
+2019-11-12 22:42:29 Error: [ParseError] syntax error, unexpected '<<' (T_SL), expecting ']'
+#0 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\composer\ClassLoader.php(322): Composer\Autoload\includeFile('C:\\UniServerZ\\w...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#2 [internal function]: spl_autoload_call('App\\Controller\\...')
+#3 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Core\App.php(152): class_exists('App\\Controller\\...')
+#4 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Core\App.php(64): Cake\Core\App::_classExistsInBase('\\Controller\\App...', 'App')
+#5 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(92): Cake\Core\App::className('Applications', 'Controller', 'Controller')
+#6 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(37): Cake\Http\ControllerFactory->getControllerClass(Object(Cake\Http\ServerRequest))
+#7 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(91): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(123): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(168): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(96): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#22 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#24 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\webroot\index.php(40): Cake\Http\Server->run()
+#25 {main}
+Request URL: /
+Referer URL: http://localhost/GIT_Cours_5B7_TP/Application_Mobile_5B7/
+
+
+2019-11-12 22:42:29 Error: [PDOException] SQLSTATE[HY000]: General error: 11 database disk image is malformed in C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php on line 173
+Stack Trace:
+#0 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(173): PDOStatement->execute(NULL)
+#1 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Statement\BufferedStatement.php(146): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#2 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Statement\SqliteStatement.php(41): Cake\Database\Statement\BufferedStatement->execute(NULL)
+#3 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Connection.php(334): Cake\Database\Statement\SqliteStatement->execute()
+#4 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#5 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Connection.php(337): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#6 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Query.php(219): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#7 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(2129): Cake\Database\Query->execute()
+#8 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(2021): Cake\ORM\Table->_insert(Object(DebugKit\Model\Entity\Request), Array)
+#9 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(1934): Cake\ORM\Table->_processSave(Object(DebugKit\Model\Entity\Request), Object(ArrayObject))
+#10 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(1639): Cake\ORM\Table->Cake\ORM\{closure}()
+#11 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Connection.php(738): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#12 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(1640): Cake\Database\Connection->transactional(Object(Closure))
+#13 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(1935): Cake\ORM\Table->_executeTransaction(Object(Closure), true)
+#14 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\debug_kit\src\ToolbarService.php(250): Cake\ORM\Table->save(Object(DebugKit\Model\Entity\Request))
+#15 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(54): DebugKit\ToolbarService->saveData(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\webroot\index.php(40): Cake\Http\Server->run()
+#20 {main}
+
+
+Request URL: /
+Referer URL: http://localhost/GIT_Cours_5B7_TP/Application_Mobile_5B7/
+2019-11-12 22:43:28 Error: [ParseError] syntax error, unexpected '<<' (T_SL), expecting ']'
+#0 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\composer\ClassLoader.php(322): Composer\Autoload\includeFile('C:\\UniServerZ\\w...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#2 [internal function]: spl_autoload_call('App\\Controller\\...')
+#3 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Core\App.php(152): class_exists('App\\Controller\\...')
+#4 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Core\App.php(64): Cake\Core\App::_classExistsInBase('\\Controller\\App...', 'App')
+#5 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(92): Cake\Core\App::className('Applications', 'Controller', 'Controller')
+#6 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(37): Cake\Http\ControllerFactory->getControllerClass(Object(Cake\Http\ServerRequest))
+#7 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(91): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(123): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(168): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(96): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#22 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#24 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\webroot\index.php(40): Cake\Http\Server->run()
+#25 {main}
+Request URL: /
+Referer URL: http://localhost/GIT_Cours_5B7_TP/Application_Mobile_5B7/
+
+
+2019-11-12 22:43:28 Error: [PDOException] SQLSTATE[HY000]: General error: 11 database disk image is malformed in C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php on line 173
+Stack Trace:
+#0 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(173): PDOStatement->execute(NULL)
+#1 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Statement\BufferedStatement.php(146): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#2 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Statement\SqliteStatement.php(41): Cake\Database\Statement\BufferedStatement->execute(NULL)
+#3 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Connection.php(334): Cake\Database\Statement\SqliteStatement->execute()
+#4 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#5 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Connection.php(337): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#6 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Query.php(219): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#7 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(2129): Cake\Database\Query->execute()
+#8 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(2021): Cake\ORM\Table->_insert(Object(DebugKit\Model\Entity\Request), Array)
+#9 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(1934): Cake\ORM\Table->_processSave(Object(DebugKit\Model\Entity\Request), Object(ArrayObject))
+#10 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(1639): Cake\ORM\Table->Cake\ORM\{closure}()
+#11 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Connection.php(738): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#12 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(1640): Cake\Database\Connection->transactional(Object(Closure))
+#13 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(1935): Cake\ORM\Table->_executeTransaction(Object(Closure), true)
+#14 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\debug_kit\src\ToolbarService.php(250): Cake\ORM\Table->save(Object(DebugKit\Model\Entity\Request))
+#15 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(54): DebugKit\ToolbarService->saveData(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\webroot\index.php(40): Cake\Http\Server->run()
+#20 {main}
+
+
+Request URL: /
+Referer URL: http://localhost/GIT_Cours_5B7_TP/Application_Mobile_5B7/
+2019-11-12 22:43:31 Error: [ParseError] syntax error, unexpected '<<' (T_SL), expecting ']'
+#0 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\composer\ClassLoader.php(322): Composer\Autoload\includeFile('C:\\UniServerZ\\w...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#2 [internal function]: spl_autoload_call('App\\Controller\\...')
+#3 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Core\App.php(152): class_exists('App\\Controller\\...')
+#4 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Core\App.php(64): Cake\Core\App::_classExistsInBase('\\Controller\\App...', 'App')
+#5 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(92): Cake\Core\App::className('Applications', 'Controller', 'Controller')
+#6 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(37): Cake\Http\ControllerFactory->getControllerClass(Object(Cake\Http\ServerRequest))
+#7 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(91): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(123): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(168): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(96): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#22 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#24 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\webroot\index.php(40): Cake\Http\Server->run()
+#25 {main}
+Request URL: /
+Referer URL: http://localhost/GIT_Cours_5B7_TP/Application_Mobile_5B7/
+
+
+2019-11-12 22:43:31 Error: [PDOException] SQLSTATE[HY000]: General error: 11 database disk image is malformed in C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php on line 173
+Stack Trace:
+#0 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(173): PDOStatement->execute(NULL)
+#1 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Statement\BufferedStatement.php(146): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#2 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Statement\SqliteStatement.php(41): Cake\Database\Statement\BufferedStatement->execute(NULL)
+#3 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Connection.php(334): Cake\Database\Statement\SqliteStatement->execute()
+#4 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#5 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Connection.php(337): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#6 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Query.php(219): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#7 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(2129): Cake\Database\Query->execute()
+#8 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(2021): Cake\ORM\Table->_insert(Object(DebugKit\Model\Entity\Request), Array)
+#9 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(1934): Cake\ORM\Table->_processSave(Object(DebugKit\Model\Entity\Request), Object(ArrayObject))
+#10 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(1639): Cake\ORM\Table->Cake\ORM\{closure}()
+#11 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Connection.php(738): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#12 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(1640): Cake\Database\Connection->transactional(Object(Closure))
+#13 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(1935): Cake\ORM\Table->_executeTransaction(Object(Closure), true)
+#14 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\debug_kit\src\ToolbarService.php(250): Cake\ORM\Table->save(Object(DebugKit\Model\Entity\Request))
+#15 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(54): DebugKit\ToolbarService->saveData(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\webroot\index.php(40): Cake\Http\Server->run()
+#20 {main}
+
+
+Request URL: /
+Referer URL: http://localhost/GIT_Cours_5B7_TP/Application_Mobile_5B7/
+2019-11-12 22:43:34 Error: [ParseError] syntax error, unexpected '<<' (T_SL), expecting ']'
+#0 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\composer\ClassLoader.php(322): Composer\Autoload\includeFile('C:\\UniServerZ\\w...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#2 [internal function]: spl_autoload_call('App\\Controller\\...')
+#3 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Core\App.php(152): class_exists('App\\Controller\\...')
+#4 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Core\App.php(64): Cake\Core\App::_classExistsInBase('\\Controller\\App...', 'App')
+#5 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(92): Cake\Core\App::className('Applications', 'Controller', 'Controller')
+#6 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(37): Cake\Http\ControllerFactory->getControllerClass(Object(Cake\Http\ServerRequest))
+#7 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(91): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(123): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(168): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(96): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#22 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#24 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\webroot\index.php(40): Cake\Http\Server->run()
+#25 {main}
+Request URL: /
+Referer URL: http://localhost/GIT_Cours_5B7_TP/Application_Mobile_5B7/
+
+
+2019-11-12 22:43:35 Error: [PDOException] SQLSTATE[HY000]: General error: 11 database disk image is malformed in C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php on line 173
+Stack Trace:
+#0 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(173): PDOStatement->execute(NULL)
+#1 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Statement\BufferedStatement.php(146): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#2 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Statement\SqliteStatement.php(41): Cake\Database\Statement\BufferedStatement->execute(NULL)
+#3 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Connection.php(334): Cake\Database\Statement\SqliteStatement->execute()
+#4 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#5 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Connection.php(337): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#6 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Query.php(219): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#7 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(2129): Cake\Database\Query->execute()
+#8 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(2021): Cake\ORM\Table->_insert(Object(DebugKit\Model\Entity\Request), Array)
+#9 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(1934): Cake\ORM\Table->_processSave(Object(DebugKit\Model\Entity\Request), Object(ArrayObject))
+#10 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(1639): Cake\ORM\Table->Cake\ORM\{closure}()
+#11 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Connection.php(738): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#12 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(1640): Cake\Database\Connection->transactional(Object(Closure))
+#13 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(1935): Cake\ORM\Table->_executeTransaction(Object(Closure), true)
+#14 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\debug_kit\src\ToolbarService.php(250): Cake\ORM\Table->save(Object(DebugKit\Model\Entity\Request))
+#15 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(54): DebugKit\ToolbarService->saveData(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\webroot\index.php(40): Cake\Http\Server->run()
+#20 {main}
+
+
+Request URL: /
+Referer URL: http://localhost/GIT_Cours_5B7_TP/Application_Mobile_5B7/
+2019-11-12 22:43:40 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Login could not be found.
+Exception Attributes: array (
+  'class' => 'Login',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+#0 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(39): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(91): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(123): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(168): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(96): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\webroot\index.php(40): Cake\Http\Server->run()
+#19 {main}
+Request URL: /login
+
+
+2019-11-12 22:43:40 Error: [PDOException] SQLSTATE[HY000]: General error: 11 database disk image is malformed in C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php on line 173
+Stack Trace:
+#0 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(173): PDOStatement->execute(NULL)
+#1 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Statement\BufferedStatement.php(146): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#2 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Statement\SqliteStatement.php(41): Cake\Database\Statement\BufferedStatement->execute(NULL)
+#3 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Connection.php(334): Cake\Database\Statement\SqliteStatement->execute()
+#4 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#5 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Connection.php(337): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#6 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Query.php(219): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#7 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(2129): Cake\Database\Query->execute()
+#8 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(2021): Cake\ORM\Table->_insert(Object(DebugKit\Model\Entity\Request), Array)
+#9 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(1934): Cake\ORM\Table->_processSave(Object(DebugKit\Model\Entity\Request), Object(ArrayObject))
+#10 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(1639): Cake\ORM\Table->Cake\ORM\{closure}()
+#11 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Connection.php(738): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#12 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(1640): Cake\Database\Connection->transactional(Object(Closure))
+#13 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(1935): Cake\ORM\Table->_executeTransaction(Object(Closure), true)
+#14 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\debug_kit\src\ToolbarService.php(250): Cake\ORM\Table->save(Object(DebugKit\Model\Entity\Request))
+#15 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(54): DebugKit\ToolbarService->saveData(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\webroot\index.php(40): Cake\Http\Server->run()
+#20 {main}
+
+
+Request URL: /login
+2019-11-12 22:44:11 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Login could not be found.
+Exception Attributes: array (
+  'class' => 'Login',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+#0 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(39): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(91): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(123): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(168): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(96): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\webroot\index.php(40): Cake\Http\Server->run()
+#19 {main}
+Request URL: /login
+
+
+2019-11-12 22:44:21 Error: [ParseError] syntax error, unexpected '<<' (T_SL), expecting ']'
+#0 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\composer\ClassLoader.php(322): Composer\Autoload\includeFile('C:\\UniServerZ\\w...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#2 [internal function]: spl_autoload_call('App\\Controller\\...')
+#3 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Core\App.php(152): class_exists('App\\Controller\\...')
+#4 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Core\App.php(64): Cake\Core\App::_classExistsInBase('\\Controller\\App...', 'App')
+#5 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(92): Cake\Core\App::className('Applications', 'Controller', 'Controller')
+#6 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(37): Cake\Http\ControllerFactory->getControllerClass(Object(Cake\Http\ServerRequest))
+#7 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(91): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(123): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(168): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(96): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#22 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#24 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\webroot\index.php(40): Cake\Http\Server->run()
+#25 {main}
+Request URL: /applications
+
+

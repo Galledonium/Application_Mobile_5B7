@@ -20,11 +20,7 @@ class ApplicationsController extends AppController
     public function index()
     {
         $this->paginate = [
-<<<<<<< HEAD
             'contain' => ['Files', 'Subcategories']
-=======
-            'contain' => ['Categories', 'Files', 'Subcategories']
->>>>>>> parent of b5619d9... fasgadg
         ];
         $applications = $this->paginate($this->Applications);
 
@@ -41,11 +37,7 @@ class ApplicationsController extends AppController
     public function view($id = null)
     {
         $application = $this->Applications->get($id, [
-<<<<<<< HEAD
             'contain' => ['Files', 'Subcategories', 'Users', 'Paiements']
-=======
-            'contain' => ['Categories', 'Files', 'Subcategories', 'Users', 'Paiements']
->>>>>>> parent of b5619d9... fasgadg
         ]);
 
         $this->set('application', $application);
@@ -68,18 +60,10 @@ class ApplicationsController extends AppController
             }
             $this->Flash->error(__('The application could not be saved. Please, try again.'));
         }
-<<<<<<< HEAD
         $files = $this->Applications->Files->find('list', ['limit' => 200]);
         $subcategories = $this->Applications->Subcategories->find('list', ['limit' => 200]);
         $users = $this->Applications->Users->find('list', ['limit' => 200]);
         $this->set(compact('application', 'files', 'subcategories', 'users'));
-=======
-        $categories = $this->Applications->Categories->find('list', ['limit' => 200]);
-        $files = $this->Applications->Files->find('list', ['limit' => 200]);
-        $subcategories = $this->Applications->Subcategories->find('list', ['limit' => 200]);
-        $users = $this->Applications->Users->find('list', ['limit' => 200]);
-        $this->set(compact('application', 'categories', 'files', 'subcategories', 'users'));
->>>>>>> parent of b5619d9... fasgadg
     }
 
     /**
@@ -103,18 +87,10 @@ class ApplicationsController extends AppController
             }
             $this->Flash->error(__('The application could not be saved. Please, try again.'));
         }
-<<<<<<< HEAD
         $files = $this->Applications->Files->find('list', ['limit' => 200]);
         $subcategories = $this->Applications->Subcategories->find('list', ['limit' => 200]);
         $users = $this->Applications->Users->find('list', ['limit' => 200]);
         $this->set(compact('application', 'files', 'subcategories', 'users'));
-=======
-        $categories = $this->Applications->Categories->find('list', ['limit' => 200]);
-        $files = $this->Applications->Files->find('list', ['limit' => 200]);
-        $subcategories = $this->Applications->Subcategories->find('list', ['limit' => 200]);
-        $users = $this->Applications->Users->find('list', ['limit' => 200]);
-        $this->set(compact('application', 'categories', 'files', 'subcategories', 'users'));
->>>>>>> parent of b5619d9... fasgadg
     }
 
     /**
