@@ -21,16 +21,8 @@ class ApplicationsControllerTest extends TestCase
      */
     public $fixtures = [
         'app.Applications',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-        'app.Categories',
->>>>>>> parent of b5619d9... fasgadg
-        'app.Files',
-        'app.Subcategories',
-=======
->>>>>>> parent of 278faef... egs
         'app.Paiements',
+        'app.Files',
         'app.Users',
         'app.ApplicationsUsers'
     ];

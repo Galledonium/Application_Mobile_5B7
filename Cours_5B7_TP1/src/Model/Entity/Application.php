@@ -11,19 +11,13 @@ use Cake\ORM\Entity;
  * @property string|null $description
  * @property float $prix
  * @property int|null $evaluation
+ * @property int|null $file_id
  * @property \Cake\I18n\FrozenTime $created
  * @property \Cake\I18n\FrozenTime $modified
+ * @property int|null $subcategorie_id
  *
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
- * @property \App\Model\Entity\Category $category
->>>>>>> parent of b5619d9... fasgadg
- * @property \App\Model\Entity\File $file
- * @property \App\Model\Entity\Subcategory $subcategory
-=======
->>>>>>> parent of 278faef... egs
  * @property \App\Model\Entity\Paiement[] $paiements
+ * @property \App\Model\Entity\File[] $files
  * @property \App\Model\Entity\User[] $users
  */
 class Application extends Entity
@@ -42,19 +36,12 @@ class Application extends Entity
         'description' => true,
         'prix' => true,
         'evaluation' => true,
+        'file_id' => true,
         'created' => true,
         'modified' => true,
-<<<<<<< HEAD
         'subcategorie_id' => true,
-<<<<<<< HEAD
-=======
-        'category' => true,
->>>>>>> parent of b5619d9... fasgadg
-        'file' => true,
-        'subcategory' => true,
-=======
->>>>>>> parent of 278faef... egs
         'paiements' => true,
+        'files' => true,
         'users' => true
     ];
 }
