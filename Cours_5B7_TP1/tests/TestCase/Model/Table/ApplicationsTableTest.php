@@ -25,11 +25,14 @@ class ApplicationsTableTest extends TestCase
     public $fixtures = [
         'app.Applications',
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         'app.Categories',
 >>>>>>> parent of b5619d9... fasgadg
         'app.Files',
         'app.Subcategories',
+=======
+>>>>>>> parent of 278faef... egs
         'app.Paiements',
         'app.Users'
     ];
@@ -74,16 +77,6 @@ class ApplicationsTableTest extends TestCase
      * @return void
      */
     public function testValidationDefault()
-    {
-        $this->markTestIncomplete('Not implemented yet.');
-    }
-
-    /**
-     * Test buildRules method
-     *
-     * @return void
-     */
-    public function testBuildRules()
     {
         $this->markTestIncomplete('Not implemented yet.');
     }

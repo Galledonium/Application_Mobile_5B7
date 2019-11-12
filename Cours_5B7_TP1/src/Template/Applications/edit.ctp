@@ -15,6 +15,7 @@
         ?></li>
         <li><?= $this->Html->link(__('List Applications'), ['action' => 'index']) ?></li>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         <li><?= $this->Html->link(__('List Categories'), ['controller' => 'Categories', 'action' => 'index']) ?></li>
         <li><?= $this->Html->link(__('New Category'), ['controller' => 'Categories', 'action' => 'add']) ?></li>
@@ -23,6 +24,8 @@
         <li><?= $this->Html->link(__('New File'), ['controller' => 'Files', 'action' => 'add']) ?></li>
         <li><?= $this->Html->link(__('List Subcategories'), ['controller' => 'Subcategories', 'action' => 'index']) ?></li>
         <li><?= $this->Html->link(__('New Subcategory'), ['controller' => 'Subcategories', 'action' => 'add']) ?></li>
+=======
+>>>>>>> parent of 278faef... egs
         <li><?= $this->Html->link(__('List Paiements'), ['controller' => 'Paiements', 'action' => 'index']) ?></li>
         <li><?= $this->Html->link(__('New Paiement'), ['controller' => 'Paiements', 'action' => 'add']) ?></li>
         <li><?= $this->Html->link(__('List Users'), ['controller' => 'Users', 'action' => 'index']) ?></li>
@@ -38,8 +41,11 @@
             echo $this->Form->control('description');
             echo $this->Form->control('prix');
             echo $this->Form->control('evaluation');
+<<<<<<< HEAD
             echo $this->Form->control('file_id', ['options' => $files, 'empty' => true]);
             echo $this->Form->control('subcategorie_id', ['options' => $subcategories, 'empty' => true]);
+=======
+>>>>>>> parent of 278faef... egs
             echo $this->Form->control('users._ids', ['options' => $users]);
         ?>
     </fieldset>

@@ -9,8 +9,6 @@ use Cake\Validation\Validator;
 /**
  * Applications Model
  *
- * @property \App\Model\Table\FilesTable&\Cake\ORM\Association\BelongsTo $Files
- * @property \App\Model\Table\SubcategoriesTable&\Cake\ORM\Association\BelongsTo $Subcategories
  * @property \App\Model\Table\PaiementsTable&\Cake\ORM\Association\HasMany $Paiements
  * @property \App\Model\Table\UsersTable&\Cake\ORM\Association\BelongsToMany $Users
  *
@@ -42,14 +40,11 @@ class ApplicationsTable extends Table
         $this->setPrimaryKey('id');
 
         $this->addBehavior('Timestamp');
-
-        $this->belongsTo('Files', [
-            'foreignKey' => 'file_id'
-        ]);
-        $this->belongsTo('Subcategories', [
-            'foreignKey' => 'subcategorie_id'
-        ]);
+        
         $this->hasMany('Paiements', [
+            'foreignKey' => 'application_id'
+        ]);
+        $this->hasMany('Files', [
             'foreignKey' => 'application_id'
         ]);
         $this->belongsToMany('Users', [
@@ -69,8 +64,7 @@ class ApplicationsTable extends Table
     {
         $validator
             ->integer('id')
-            ->allowEmptyString('id', null, 'create')
-            ->add('id', 'unique', ['rule' => 'validateUnique', 'provider' => 'table']);
+            ->allowEmptyString('id', null, 'create');
 
         $validator
             ->scalar('name')
@@ -93,21 +87,5 @@ class ApplicationsTable extends Table
             ->allowEmptyString('evaluation');
 
         return $validator;
-    }
-
-    /**
-     * Returns a rules checker object that will be used for validating
-     * application integrity.
-     *
-     * @param \Cake\ORM\RulesChecker $rules The rules object to be modified.
-     * @return \Cake\ORM\RulesChecker
-     */
-    public function buildRules(RulesChecker $rules)
-    {
-        $rules->add($rules->isUnique(['id']));
-        $rules->add($rules->existsIn(['file_id'], 'Files'));
-        $rules->add($rules->existsIn(['subcategorie_id'], 'Subcategories'));
-
-        return $rules;
     }
 }

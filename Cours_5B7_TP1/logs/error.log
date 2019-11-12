@@ -9290,6 +9290,7 @@ Request URL: /cake.logo.svg
 Referer URL: http://localhost/GIT_Cours_5A5_TP/Application_Mobile_5B7/Cours_5B7_TP1/pages/home
 
 
+<<<<<<< HEAD
 2019-11-12 22:03:40 Error: [ParseError] syntax error, unexpected 'echo' (T_ECHO), expecting ',' or ';'
 #0 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\View\View.php(1380): Cake\View\View->_evaluate('C:\\UniServerZ\\w...', Array)
 #1 C:\UniServerZ\www\GIT_Cours_5B7_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\View\View.php(880): Cake\View\View->_render('C:\\UniServerZ\\w...')
@@ -10518,3 +10519,5 @@ Request URL: /login
 Request URL: /applications
 
 
+=======
+>>>>>>> parent of 278faef... egs
