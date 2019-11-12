@@ -8,14 +8,10 @@
     <ul class="side-nav">
         <li class="heading"><?= __('Actions') ?></li>
         <li><?= $this->Html->link(__('New Application'), ['action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List Categories'), ['controller' => 'Categories', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New Category'), ['controller' => 'Categories', 'action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List Files'), ['controller' => 'Files', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New File'), ['controller' => 'Files', 'action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List Subcategories'), ['controller' => 'Subcategories', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New Subcategory'), ['controller' => 'Subcategories', 'action' => 'add']) ?></li>
         <li><?= $this->Html->link(__('List Paiements'), ['controller' => 'Paiements', 'action' => 'index']) ?></li>
         <li><?= $this->Html->link(__('New Paiement'), ['controller' => 'Paiements', 'action' => 'add']) ?></li>
+        <li><?= $this->Html->link(__('List Files'), ['controller' => 'Files', 'action' => 'index']) ?></li>
+        <li><?= $this->Html->link(__('New File'), ['controller' => 'Files', 'action' => 'add']) ?></li>
         <li><?= $this->Html->link(__('List Users'), ['controller' => 'Users', 'action' => 'index']) ?></li>
         <li><?= $this->Html->link(__('New User'), ['controller' => 'Users', 'action' => 'add']) ?></li>
     </ul>
@@ -45,10 +41,10 @@
                 <td><?= h($application->description) ?></td>
                 <td><?= $this->Number->format($application->prix) ?></td>
                 <td><?= $this->Number->format($application->evaluation) ?></td>
-                <td><?= $application->has('file') ? $this->Html->link($application->file->name, ['controller' => 'Files', 'action' => 'view', $application->file->id]) : '' ?></td>
+                <td><?= $this->Number->format($application->file_id) ?></td>
                 <td><?= h($application->created) ?></td>
                 <td><?= h($application->modified) ?></td>
-                <td><?= $application->has('subcategory') ? $this->Html->link($application->subcategory->name, ['controller' => 'Subcategories', 'action' => 'view', $application->subcategory->id]) : '' ?></td>
+                <td><?= $this->Number->format($application->subcategorie_id) ?></td>
                 <td class="actions">
                     <?= $this->Html->link(__('View'), ['action' => 'view', $application->id]) ?>
                     <?= $this->Html->link(__('Edit'), ['action' => 'edit', $application->id]) ?>

@@ -10,7 +10,7 @@ use Cake\Validation\Validator;
  * Applications Model
  *
  * @property \App\Model\Table\FilesTable&\Cake\ORM\Association\BelongsTo $Files
- * @property \App\Model\Table\SubcategoriesTable&\Cake\ORM\Association\BelongsTo $Subcategories
+ * @property &\Cake\ORM\Association\BelongsTo $Subcategories
  * @property \App\Model\Table\PaiementsTable&\Cake\ORM\Association\HasMany $Paiements
  * @property \App\Model\Table\UsersTable&\Cake\ORM\Association\BelongsToMany $Users
  *

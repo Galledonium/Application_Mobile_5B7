@@ -46,8 +46,8 @@ class ApplicationsFixture extends TestFixture
                 'prix' => 1.5,
                 'evaluation' => 1,
                 'file_id' => 1,
-                'created' => '2019-11-12 22:10:18',
-                'modified' => '2019-11-12 22:10:18',
+                'created' => '2019-11-12 22:28:14',
+                'modified' => '2019-11-12 22:28:14',
                 'subcategorie_id' => 1
             ],
         ];
