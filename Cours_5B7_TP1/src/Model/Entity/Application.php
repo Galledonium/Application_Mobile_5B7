@@ -16,6 +16,10 @@ use Cake\ORM\Entity;
  * @property \Cake\I18n\FrozenTime $modified
  * @property int|null $subcategorie_id
  *
+<<<<<<< HEAD
+=======
+ * @property \App\Model\Entity\Category $category
+>>>>>>> parent of b5619d9... fasgadg
  * @property \App\Model\Entity\File $file
  * @property \App\Model\Entity\Subcategory $subcategory
  * @property \App\Model\Entity\Paiement[] $paiements
@@ -41,6 +45,10 @@ class Application extends Entity
         'created' => true,
         'modified' => true,
         'subcategorie_id' => true,
+<<<<<<< HEAD
+=======
+        'category' => true,
+>>>>>>> parent of b5619d9... fasgadg
         'file' => true,
         'subcategory' => true,
         'paiements' => true,

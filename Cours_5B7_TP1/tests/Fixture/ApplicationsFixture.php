@@ -46,8 +46,13 @@ class ApplicationsFixture extends TestFixture
                 'prix' => 1.5,
                 'evaluation' => 1,
                 'file_id' => 1,
+<<<<<<< HEAD
                 'created' => '2019-11-12 22:39:12',
                 'modified' => '2019-11-12 22:39:12',
+=======
+                'created' => '2019-11-12 22:10:18',
+                'modified' => '2019-11-12 22:10:18',
+>>>>>>> parent of b5619d9... fasgadg
                 'subcategorie_id' => 1
             ],
         ];

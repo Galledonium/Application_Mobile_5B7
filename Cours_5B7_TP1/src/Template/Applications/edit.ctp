@@ -14,6 +14,11 @@
             )
         ?></li>
         <li><?= $this->Html->link(__('List Applications'), ['action' => 'index']) ?></li>
+<<<<<<< HEAD
+=======
+        <li><?= $this->Html->link(__('List Categories'), ['controller' => 'Categories', 'action' => 'index']) ?></li>
+        <li><?= $this->Html->link(__('New Category'), ['controller' => 'Categories', 'action' => 'add']) ?></li>
+>>>>>>> parent of b5619d9... fasgadg
         <li><?= $this->Html->link(__('List Files'), ['controller' => 'Files', 'action' => 'index']) ?></li>
         <li><?= $this->Html->link(__('New File'), ['controller' => 'Files', 'action' => 'add']) ?></li>
         <li><?= $this->Html->link(__('List Subcategories'), ['controller' => 'Subcategories', 'action' => 'index']) ?></li>
@@ -34,7 +39,12 @@
             echo $this->Form->control('prix');
             echo $this->Form->control('evaluation');
             echo $this->Form->control('file_id', ['options' => $files, 'empty' => true]);
+<<<<<<< HEAD
             echo $this->Form->control('subcategorie_id', ['options' => $subcategories, 'empty' => true]);
+=======
+            echo $this->Form->control('categorie_id', ['options' => $categories]);
+            echo $this->Form->control('subcategorie_id', ['options' => $subcategories]);
+>>>>>>> parent of b5619d9... fasgadg
             echo $this->Form->control('users._ids', ['options' => $users]);
         ?>
     </fieldset>
