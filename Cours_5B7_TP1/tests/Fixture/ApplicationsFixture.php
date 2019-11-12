@@ -27,7 +27,7 @@ class ApplicationsFixture extends TestFixture
         '_constraints' => [
             'primary' => ['type' => 'primary', 'columns' => ['id'], 'length' => []],
             'sqlite_autoindex_applications_1' => ['type' => 'unique', 'columns' => ['id'], 'length' => []],
-            'subcategorie_id_fk' => ['type' => 'foreign', 'columns' => ['subcategorie_id'], 'references' => ['subcategories', 'id'], 'update' => 'noAction', 'delete' => 'noAction', 'length' => []],
+            'subcategorie_id_fk' => ['type' => 'foreign', 'columns' => ['subcategorie_id'], 'references' => ['subcategories', null], 'update' => 'noAction', 'delete' => 'noAction', 'length' => []],
         ],
     ];
     // @codingStandardsIgnoreEnd
@@ -46,8 +46,8 @@ class ApplicationsFixture extends TestFixture
                 'prix' => 1.5,
                 'evaluation' => 1,
                 'file_id' => 1,
-                'created' => '2019-11-12 22:28:14',
-                'modified' => '2019-11-12 22:28:14',
+                'created' => '2019-11-12 22:39:12',
+                'modified' => '2019-11-12 22:39:12',
                 'subcategorie_id' => 1
             ],
         ];

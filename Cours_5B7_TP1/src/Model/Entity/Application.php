@@ -16,8 +16,9 @@ use Cake\ORM\Entity;
  * @property \Cake\I18n\FrozenTime $modified
  * @property int|null $subcategorie_id
  *
+ * @property \App\Model\Entity\File $file
+ * @property \App\Model\Entity\Subcategory $subcategory
  * @property \App\Model\Entity\Paiement[] $paiements
- * @property \App\Model\Entity\File[] $files
  * @property \App\Model\Entity\User[] $users
  */
 class Application extends Entity
@@ -40,8 +41,9 @@ class Application extends Entity
         'created' => true,
         'modified' => true,
         'subcategorie_id' => true,
+        'file' => true,
+        'subcategory' => true,
         'paiements' => true,
-        'files' => true,
         'users' => true
     ];
 }
